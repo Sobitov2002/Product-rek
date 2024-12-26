@@ -1,11 +1,14 @@
-<template lang="">
-        <h1 class="text-[30px] text-red-500">Salom</h1>
-</template>
-<script>
-export default {
-    
-}
+<script setup lang="ts">
+import FormPage from '@/components/form/FormPage.vue'
 </script>
-<style lang="">
+<template >
+        <div class="custom-container">
+                <h1>A'zo bo'lish uchun bu yerga bosing !</h1>
+                <FormPage />
+        </div>
+
+</template>
+
+<style>
     
 </style>

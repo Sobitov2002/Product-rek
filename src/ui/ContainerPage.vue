@@ -1,12 +1,11 @@
 <script setup lang="ts">
-
 </script>
-<template >
-    <div>
+<template>
+    <div class="max-w-1000px">
         
     </div>
 </template>
 
-<style >
+<style lang="">
     
 </style>
