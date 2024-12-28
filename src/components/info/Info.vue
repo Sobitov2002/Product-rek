@@ -3,7 +3,9 @@ import SubTitle from '@/components/ui/SubTitle.vue';
 </script>
 
 <template>
-    <div class=" bg-[#bfbfc0] rounded-[10px] mt-[130px] p-10  relative">
+    <SubTitle title="Ma'lumot" >
+    </SubTitle> 
+    <div class=" bg-[#bfbfc0] rounded-[10px] mt-[100px] p-10  relative">
 
         <div class=" h-full relative ">
             <img class="absolute lg:bl md:block hidden bottom-[-200px] md:bottom-[-150px] left-1/2 transform -translate-x-1/2 md:h-[580px] h-[980px] object-cover z-[10]"
@@ -91,7 +93,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                 </ul>
             </div>
         </div>
-    </div>
+        </div>
 </template>
 
 <style scoped>

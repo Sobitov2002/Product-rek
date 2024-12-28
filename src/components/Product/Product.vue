@@ -11,8 +11,8 @@ data.value = productData
 <template >
     <SubTitle title="Siz uchun">
     </SubTitle>
-    <ul class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-20 mt-10 ">
-        <li class="shadow-md rounded-[10px] " v-for="(data, index) in productData">
+    <ul class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-20 my-[100px] ">
+        <li class="shadow-2xl rounded-[10px] " v-for="(data, index) in productData">
             <div class="relative w-full rounded-[10px] h-[200px] mx-auto">
                 <img class="w-full h-full rounded-[10px] object-cover " :src="data.imgUrl" alt="Background">
                 <!-- <img class="absolute bottom-0  transform " :src="data.imgUrlTwo" alt="Product"> -->
