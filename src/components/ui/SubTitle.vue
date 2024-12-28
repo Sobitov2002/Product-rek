@@ -8,11 +8,9 @@ const props = defineProps({
 </script>
 <template >
     <div class="flex justify-center items-center my-0">
-        <h1
-            class="text-[50px] font-bold text-center bg-gradient-to-r from-[#DF0A69] via-[#E771EB] to-[#F488B0] text-transparent bg-clip-text">
+        <h1 class="text-[50px] font-bold text-center">
             {{ props.title }}
         </h1>
-
     </div>
 </template>
 
