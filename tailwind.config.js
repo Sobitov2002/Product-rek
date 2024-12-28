@@ -5,6 +5,10 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
+
+    plugins: [
+        require('flowbite/plugin')
+    ],
   
   content: [
     './pages/**/*.{ts,tsx,vue}',

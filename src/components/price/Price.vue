@@ -1,0 +1,57 @@
+<script setup lang="ts">
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from '@/components/ui/card'
+import {ref} from "vue"
+import { priceData } from '../../constant/priceData';
+import Dialog from '@/components/form/Dialog.vue'
+
+
+const Data = ref<any>({})
+Data.value = priceData
+
+
+
+</script>
+<template>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 relative">
+        <Card class="shadow-2xl bg-white/30 backdrop-blur-md rounded-[10px] p-4 mt-6 relative"
+            v-for="(data, index) in priceData" :key="index">
+
+            <div class="relative">
+                <img class="rounded-[50%] absolute top-[-50px] left-[50%] transform -translate-x-1/2 h-[120px] w-[120px] border-4 border-white"
+                    src="https://i.pinimg.com/736x/6a/44/05/6a4405abfa5e67f774fb45af1e7db0a5.jpg" alt="">
+            </div>
+
+            <CardHeader class="mt-[60px] flex items-center">
+                <CardTitle class="text-[40px]">{{ data.text }}</CardTitle>
+                <CardDescription>Price: {{ data.price }} so'm</CardDescription>
+            </CardHeader>
+            <CardContent>
+                <ul>
+                    <li class="mt-4 flex justify-start" v-for="(item, idx) in data.subtitle" :key="item.id">
+                        <span>
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg></span>
+                        {{ item.title }}
+                    </li>
+                </ul>
+            </CardContent>
+            <CardFooter>
+              <Dialog />
+            </CardFooter>
+        </Card>
+    </div>
+
+</template>
+
+
