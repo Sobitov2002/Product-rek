@@ -8,7 +8,7 @@ export const priceData =[
             {id:'3' , title:"Kursdan so’ng barcha materiallarga 4 oylik kirish huquqi" },
             
         ],
-        price: 15000
+        price: 10000
     },
      {
         text:'Standart',
@@ -18,7 +18,7 @@ export const priceData =[
             {id:'3' , title:"Kursdan so’ng barcha materiallarga 4 oylik kirish huquqi" },
             
         ],
-        price: 15000
+        price: 10000
     },
     {
         text:'Standart',
@@ -28,6 +28,6 @@ export const priceData =[
             {id:'3' , title:"Kursdan so’ng barcha materiallarga 4 oylik kirish huquqi" },
             
         ],
-        price: 15000
+        price: 10000
     }
 ]

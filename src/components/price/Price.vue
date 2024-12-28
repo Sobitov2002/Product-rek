@@ -10,6 +10,7 @@ import {
 import {ref} from "vue"
 import { priceData } from '../../constant/priceData';
 import Dialog from '@/components/form/Dialog.vue'
+import SubTitle from '@/components/ui/SubTitle.vue'
 
 
 const Data = ref<any>({})
@@ -19,13 +20,16 @@ Data.value = priceData
 
 </script>
 <template>
+    <SubTitle title="Ta'riflar">
+    </SubTitle>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 relative mt-5">
+
         <Card class="shadow-2xl bg-white/30 backdrop-blur-md rounded-[10px] p-4 mt-6 relative"
             v-for="(data, index) in priceData" :key="index">
 
             <div class="relative">
-                <img class="rounded-[50%] absolute top-[-50px] left-[50%] transform -translate-x-1/2 h-[120px] w-[120px] border-4 border-white"
-                    src="https://i.pinimg.com/736x/6a/44/05/6a4405abfa5e67f774fb45af1e7db0a5.jpg" alt="">
+                <img class="rounded-[50%] absolute top-[-50px] left-[50%] transform -translate-x-1/2 h-[140px] w-[140px] border-1 "
+                    src="../../assets/image/1.svg" alt="">
             </div>
 
             <CardHeader class="mt-[60px] flex items-center">
@@ -47,7 +51,7 @@ Data.value = priceData
                 </ul>
             </CardContent>
             <CardFooter>
-              <Dialog />
+                <Dialog />
             </CardFooter>
         </Card>
     </div>
