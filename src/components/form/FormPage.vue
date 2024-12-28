@@ -55,7 +55,7 @@ const submit = () => {
 </script>
 
 <template>
-    <form @submit.prevent="submit" method="POST" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[600px]">
+    <form @submit.prevent="submit" method="POST" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
         <h1 class="text-gray-700 text-[25px] font-bold text-center">Joyingizni band qilish uchun ma'lumotlaringizni
             yuboring !</h1>
         <div>

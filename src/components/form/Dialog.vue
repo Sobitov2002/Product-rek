@@ -19,7 +19,7 @@ const handleDialogOpen = (value: boolean) => {
             </Button>
         </DialogTrigger>
 
-        <DialogContent class="sm:max-w-[425px] grid-rows-[auto_minmax(0,1fr)_auto] p-0 max-h-[90dvh]">
+        <DialogContent class=" grid-rows-[auto_minmax(0,1fr)_auto] p-0 max-h-[90dvh]">
  
             <DialogTitle>Band qilish</DialogTitle>
 
