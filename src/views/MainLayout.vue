@@ -4,7 +4,7 @@ import Price from '@/components/price/Price.vue'
 
 </script>
 <template>
-        <main class="min-h-screen bg-gradient-to-br from-[#e998f7] via-white to-[#cff3b7]  ">
+        <main class="min-h-screen bg-gradient-to-br from-[#e998f7] via-white to-[#aae682]  ">
                 <div class="custom-container max-w-4xl mx-auto p-10 ">
                         <Product />
                         <Price/>     

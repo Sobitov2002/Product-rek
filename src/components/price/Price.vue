@@ -19,7 +19,7 @@ Data.value = priceData
 
 </script>
 <template>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 relative">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 relative mt-5">
         <Card class="shadow-2xl bg-white/30 backdrop-blur-md rounded-[10px] p-4 mt-6 relative"
             v-for="(data, index) in priceData" :key="index">
 
