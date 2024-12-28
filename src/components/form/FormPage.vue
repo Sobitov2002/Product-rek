@@ -55,9 +55,11 @@ const submit = () => {
 </script>
 
 <template>
-    <form @submit.prevent="submit" method="POST" class="mt-0 mx-auto p-10 bg-white rounded shadow-md">
+    <form @submit.prevent="submit" method="POST" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[600px]">
+        <h1 class="text-gray-700 text-[25px] font-bold text-center">Joyingizni band qilish uchun ma'lumotlaringizni
+            yuboring !</h1>
         <div>
-            <label class="block text-gray-700 mb-2" for="fullName">To'liq ism sharifingiz</label>
+            <label class="block mb-2" for="fullName">To'liq ism sharifingiz</label>
             <input required v-model="formData.fullName" id="fullName" type="text"
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Ism,Familya" />
@@ -67,13 +69,13 @@ const submit = () => {
             <input required v-model="formData.phoneNumber" id="phoneNumber" type="number"
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="+998" />
-            <button  class="bg-blue-600 text-white px-[10px] py-[5px] mt-4 rounded-[5px]"
-                type="submit">
+            <button class="bg-blue-600 text-white px-[10px] py-[5px] mt-4 rounded-[5px]" type="submit">
                 Yuborish
             </button>
         </div>
     </form>
 </template>
+
 
 <style scoped>
 
