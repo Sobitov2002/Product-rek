@@ -9,7 +9,7 @@
             </div>
             <div></div>
             <div>
-                <h1 class="text-[50px] text-white text-right md:text-left font-bold">Korean</h1>
+                <h1 class="text-[50px] text-white  text-left font-bold">Korean</h1>
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
 @media (max-width: 480px) {
     .mybg {
         background-size: 300px 600px;
-         background-position: left;
+         background-image: none;
     }
 }
 </style>
