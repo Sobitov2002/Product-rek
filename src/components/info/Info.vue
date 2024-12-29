@@ -6,7 +6,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
     <SubTitle title="Ma'lumot">
     </SubTitle>
     <div
-        class=" bg-[radial-gradient(circle,rgba(131,2,45,1)_0%,rgba(245,237,237,1)_0%,rgba(131,2,45,1)_100%)] rounded-[10px] mt-[100px] p-10  relative">
+        class=" md:bg-[radial-gradient(circle,rgba(131,2,45,1)_0%,rgba(245,237,237,1)_0%,rgba(131,2,45,1)_100%)] bg-[#83022d] rounded-[10px] mt-[100px] p-10  relative">
 
         <div class=" h-full relative ">
             <img class="absolute lg:bl md:block hidden bottom-[-200px] md:bottom-[-150px] left-1/2 transform -translate-x-1/2 md:h-[580px] h-[980px] object-cover z-[10]"

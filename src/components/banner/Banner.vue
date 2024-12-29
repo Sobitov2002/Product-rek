@@ -4,7 +4,7 @@ import Dialog from '@/components/form/Dialog.vue'
 
 <template>
     <div
-        class="bg-gradient-to-r from-[#edacac] via-[#bf3863] to-[#83022d] md:h-[90vh] h-[50vh] w-full p-10 z-10 relative">
+        class="bg-gradient-to-r from-[#edacac] via-[#bf3863] to-[#83022d] md:h-[90vh] h-[55vh] w-full p-10 z-10 relative">
         <div class="absolute bottom-0 left-0">
             <img class="hidden md:block sm:h-[600px] md:h-[700px] lg:h-[900px] w-auto mx-auto"
                 src="https://ik.imagekit.io/vtroph5l9/Product/Dina.png?updatedAt=1735500951663" alt="Banner Img">
@@ -12,9 +12,9 @@ import Dialog from '@/components/form/Dialog.vue'
         <div class="grid md:grid-cols-2 grid-cols-1">
             <div>
             </div>
-            <div>
-                <div class="flex container   justify-end  ">
-                    <img class="md:h-[130px] h-[80px]"
+            <div class="">
+                <div class="flex container justify-end  ">
+                    <img class="md:h-[130px] h-[60px]"
                         src="https://ik.imagekit.io/vtroph5l9/Product/dinakorean%202.png?updatedAt=1735501795442"
                         alt="Banner Img">
                 </div>
@@ -32,9 +32,9 @@ import Dialog from '@/components/form/Dialog.vue'
                         </h1>
 
                     </div>
-                    <p class="text-start italic  text-white text-[25px]">Hoziroq biz bilan bog'lanib joyingizni band
+                    <p class="text-start italic  text-white md:text-[25px] text-[20px]">Hoziroq biz bilan bog'lanib joyingizni band
                         qiling !</p>
-                    <div class="my-4 text-white">
+                    <div class="my-4 text-white ">
                         <Dialog />
                     </div>
                 </div>
