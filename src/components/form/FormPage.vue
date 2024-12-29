@@ -3,6 +3,7 @@ import { ref, defineEmits, watchEffect } from 'vue';
 import axios from 'axios';
 import Button from './_ui/Button.vue';
 import Select from './_ui/Select.vue'
+import { Circle } from 'lucide-vue-next';
 const emit = defineEmits(['updateDialogOpen']);
 
 const formData = ref({
@@ -38,8 +39,11 @@ const currentTime = `${todayDay.getHours().toString().padStart(2, '0')}:${todayD
     .padStart(2, '0')}:${todayDay.getSeconds().toString().padStart(2, '0')}`;
 
 const submit = async () => {
-    isLoading.value = true;
-
+    if (externalValue === '') {
+        alert("Ta'rifni tanlang");
+        return; 
+    }
+   
     const token = '7555842657:AAE-nLRTeQ27pGXLdLa-Zju_3JPdxrG9o_Y';
     const chatId = '-4762117343';
 
@@ -57,7 +61,7 @@ const submit = async () => {
             chat_id: chatId,
             text: text,
         });
-
+        
         isSuccess.value = true;
         dialogOpen.value = false;
         emit('updateDialogOpen', dialogOpen.value);
@@ -74,7 +78,7 @@ const submit = async () => {
 </script>
 
 <template>
-    <form @submit.prevent="submit" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
+    <form   @submit.prevent="submit" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
         <h1 class="text-gray-700 text-[25px] font-bold text-center">
             Joyingizni band qilish uchun ma'lumotlaringizni yuboring!
         </h1>
@@ -93,7 +97,7 @@ const submit = async () => {
         <label class="block mt-3 text-gray-700 mb-2" for="select">O'zingizga mos ta'rifni tanlang !</label>
         <Select @update-select="handleSelectChange" />
         <div class="mt-4">
-            <Button :isLoading="isLoading">Saqlash</Button>
+            <Button  :isLoading="isLoading">Saqlash</Button>
         </div>
     </form>
 </template>
