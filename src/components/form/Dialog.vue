@@ -13,20 +13,17 @@ const handleDialogOpen = (value: boolean) => {
 </script>
 
 <template>
-  
     <Dialog v-model:open="dialogOpen">
         <DialogTrigger as-child>
             <Button variant="outline">
                 JOYNI BAND QILISH
             </Button>
         </DialogTrigger>
-
         <DialogContent class=" grid-rows-[auto_minmax(0,1fr)_auto] p-0 max-h-[90dvh]">
             <FormPage @updateDialogOpen="handleDialogOpen" />
         </DialogContent>
     </Dialog>
 </template>
-
 <style scoped>
 
 </style>
