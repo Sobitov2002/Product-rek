@@ -4,7 +4,7 @@ import Dialog from '@/components/form/Dialog.vue'
 
 <template>
     <div
-        class="bg-gradient-to-r from-[#edacac] via-[#bf3863] to-[#83022d] md:h-[90vh] h-[60vh] w-full p-10 z-10 relative">
+        class="bg-gradient-to-r from-[#edacac] via-[#bf3863] to-[#83022d] md:h-[90vh] h-[100vh] w-full p-10 z-10 relative">
         <div class="absolute bottom-0 left-0">
             <img class="hidden md:block sm:h-[600px] md:h-[700px] lg:h-[900px] w-auto mx-auto"
                 src="https://ik.imagekit.io/vtroph5l9/Product/Dina.png?updatedAt=1735500951663" alt="Banner Img">
