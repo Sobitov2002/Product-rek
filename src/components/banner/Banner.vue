@@ -14,7 +14,7 @@
 
 <style scoped>
 .mybg {
-    background-image: url('https://ik.imagekit.io/vtroph5l9/Product/IMG_0659.png?updatedAt=1735446647811');
+    /* background-image: url('https://ik.imagekit.io/vtroph5l9/Product/IMG_0659.png?updatedAt=1735446647811'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
