@@ -41,9 +41,12 @@ const currentTime = `${todayDay.getHours().toString().padStart(2, '0')}:${todayD
 const submit = async () => {
     if (externalValue === '') {
         alert("Ta'rifni tanlang");
-        return; 
+        return 
+            
     }
+    isLoading.value = true;
    
+
     const token = '7555842657:AAE-nLRTeQ27pGXLdLa-Zju_3JPdxrG9o_Y';
     const chatId = '-4762117343';
 

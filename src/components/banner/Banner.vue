@@ -1,38 +1,51 @@
 <script setup lang="ts">
+import Dialog from '@/components/form/Dialog.vue'
 </script>
 
 <template>
-    <div class="bg-[#7400b8] md:h-[90vh] h-[50vh] w-full p-10 mybg z-10">
-        <div class="grid grid-cols-1 container mt-20 z-[-1]">
-            <div class="">
-                <h1 class="text-[50px] text-white text-right font-bold">Dina</h1>
-            </div>
-            <div></div>
+    <div
+        class="bg-gradient-to-r from-[#edacac] via-[#bf3863] to-[#83022d] md:h-[90vh] h-[50vh] w-full p-10 z-10 relative">
+        <div class="absolute bottom-0 left-0">
+            <img class="hidden md:block sm:h-[600px] md:h-[700px] lg:h-[900px] w-auto mx-auto"
+                src="https://ik.imagekit.io/vtroph5l9/Product/Dina.png?updatedAt=1735500951663" alt="Banner Img">
+        </div>
+        <div class="grid md:grid-cols-2 grid-cols-1">
             <div>
-                <h1 class="text-[50px] text-white  text-left font-bold">Korean</h1>
             </div>
+            <div>
+                <div class="flex container   justify-end  ">
+                    <img class="md:h-[130px] h-[80px]"
+                        src="https://ik.imagekit.io/vtroph5l9/Product/dinakorean%202.png?updatedAt=1735501795442"
+                        alt="Banner Img">
+                </div>
+                <div class="flex-col  justify-center">
+                    <div class="text-center  text-white  font-bold">
+
+                    </div>
+                    <div class="  text-white md:text-[80px] text-[50px] font-bold">
+                        <h1 class="leading-tight">Madina</h1>
+                        <h1 class="leading-tight">Qodirova</h1>
+                    </div>
+                    <div class="flex     justify-center  ">
+                        <h1 class="text-start  text-white md:text-[30px] text-[20px]  font-bold">
+                            4 Oyda Koreys Tilini 0 Dan Oson O’rganib Topik daraja Olasiz
+                        </h1>
+
+                    </div>
+                    <p class="text-start italic  text-white text-[25px]">Hoziroq biz bilan bog'lanib joyingizni band
+                        qiling !</p>
+                    <div class="my-4 text-white">
+                        <Dialog />
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
+
 </template>
 
 <style scoped>
-.mybg {
-    background-image: url('https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529');
-    background-size: 670px 1200px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-@media (max-width: 768px) {
-    .mybg {
-        background-size: 500px 800px;
-    }
-}
 
-
-@media (max-width: 480px) {
-    .mybg {
-        background-size: 300px 600px;
-         background-image: none;
-    }
-}
 </style>
