@@ -39,7 +39,7 @@ const footer = ref<HTMLElement | null>(null);
                     Koreya universitetiga grant yutish uchun yillar yo’qotish shart emas</h1>
             </div>
 
-            <div class="flex items-center md:justify-center justify-end mt-10">
+            <div class="flex items-center md:justify-center justify-end mt-5  md:mt-[200px]">
                 <h1
                     class="cursor-pointer bg-gradient-to-r from-[#BA5A5B] to-[#BA5A5B] md:py-7 py-3 md:px-[180px] px-[60px] text-[20px] text-white rounded-[10px] hover:bg-[#dc7c7e]">
                     Batafsil
