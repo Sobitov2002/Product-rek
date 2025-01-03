@@ -10,8 +10,12 @@ import Banner from '@/components/banner/Banner.vue'
                 <Banner />
                 <div class="custom-container max-w-4xl mx-auto p-10 ">
                         <Product />
-                        <Info />
-                        <Price />
+                </div>
+                <div class="bg-[#fbedeb]">
+                        <div class=" container">
+                                <Info />
+                                <Price />
+                        </div>
                 </div>
         </main>
 </template>

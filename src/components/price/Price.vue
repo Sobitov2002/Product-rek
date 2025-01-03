@@ -20,16 +20,16 @@ Data.value = priceData
 
 </script>
 <template>
-    <div class="mt-[130px]">
+    <div class="md:mt-[130px] mt-[50px]">
         <SubTitle title="Ta'riflar">
         </SubTitle>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 relative mt-5">
 
-            <Card class="shadow-2xl bg-white/30 backdrop-blur-md rounded-[10px] p-4 mt-6 relative"
+            <Card class="shadow-2xl bg-white backdrop-blur-md rounded-[10px] p-4 mt-6 relative"
                 v-for="(data, index) in priceData" :key="index">
 
-                <div class="relative">
-                    <img class="rounded-[50%] absolute top-[-50px] left-[50%] transform -translate-x-1/2 h-[140px] w-[140px] border-1 "
+                <div class="relative  ">
+                    <img class=" absolute top-[-50px] left-[50%] transform -translate-x-1/2 h-[140px] w-[140px]  "
                         src="../../assets/image/1.svg" alt="">
                 </div>
                 <CardHeader class="mt-[60px] flex items-center">

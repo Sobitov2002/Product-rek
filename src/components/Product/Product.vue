@@ -13,8 +13,8 @@ data.value = productData
     </SubTitle>
     <ul class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-20 my-[100px] ">
         <li class="shadow-2xl mt-5 rounded-[10px] " v-for="(data, index) in productData">
-            <div class="relative bg-slate-200 w-full rounded-[10px] h-[150px] mx-auto">
-                <img class="absolute bottom-0 h-[280px] left-1/2 -translate-x-1/2 bg-center transform"
+            <div class="relative bg-[#F8CFD1] w-full rounded-[10px] h-[150px] mx-auto">
+                <img class="absolute bottom-0 h-[270px] left-1/2 -translate-x-1/2 bg-center transform"
                     :src="data.imgUrlTwo" alt="Product">
             </div>
             <div class="py-5 px-5">

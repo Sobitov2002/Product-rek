@@ -3,10 +3,8 @@ import SubTitle from '@/components/ui/SubTitle.vue';
 </script>
 
 <template>
-    <SubTitle title="Ma'lumot">
-    </SubTitle>
     <div
-        class=" md:bg-[radial-gradient(circle,rgba(131,2,45,1)_0%,rgba(245,237,237,1)_0%,rgba(131,2,45,1)_100%)] bg-[#83022d] rounded-[10px] mt-[100px] p-10  relative">
+        class=" bg-gradient-to-r from-[#EFA3A7] via-[#FAEAEB] to-[#EFA3A7] rounded-[10px] md:mt-[130px] p-10  relative">
 
         <div class=" h-full relative ">
             <img class="absolute lg:bl md:block hidden bottom-[-200px] md:bottom-[-150px] left-1/2 transform -translate-x-1/2 md:h-[580px] h-[980px] object-cover z-[10]"
@@ -23,7 +21,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                                     d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z" />
                             </svg>
                         </li>
-                        <p class="text-[15px] text-white">took a galley of type and scrambled it to make a type specime
+                        <p class="text-[15px] text-black">took a galley of type and scrambled it to make a type specime
                         </p>
                     </div>
                     <div class="flex items-center space-x-5">
@@ -36,7 +34,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                             </svg>
 
                         </li>
-                        <p class="text-[15px] text-white">took a galley of type and scrambled it to make a type specime
+                        <p class="text-[15px] text-black">took a galley of type and scrambled it to make a type specime
                         </p>
                     </div>
                     <div class="flex items-center space-x-5">
@@ -48,7 +46,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                                     d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z" />
                             </svg>
                         </li>
-                        <p class="text-[15px] text-white">took a galley of type and scrambled it to make a type specime
+                        <p class="text-[15px] text-black">took a galley of type and scrambled it to make a type specime
                         </p>
                     </div>
                 </ul>
@@ -59,7 +57,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                 <!-- Right side -->
                 <ul class="flex flex-col items-center space-y-5 max-w-full">
                     <div class="flex items-center space-x-5">
-                        <p class="text-right text-white text-[15px]">took a galley of type and scrambled it to make a
+                        <p class="text-right text-black text-[15px]">took a galley of type and scrambled it to make a
                             type specime
                         </p>
                         <li class="p-5 m-0 rounded-[50%] bg-white">
@@ -72,7 +70,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                         </li>
                     </div>
                     <div class="flex items-center space-x-5">
-                        <p class="text-right text-white text-[15px]">took a galley of type and scrambled it to make a
+                        <p class="text-right text-black text-[15px]">took a galley of type and scrambled it to make a
                             type specime
                         </p>
                         <li class="p-5 rounded-[50%] bg-white">
@@ -85,7 +83,7 @@ import SubTitle from '@/components/ui/SubTitle.vue';
                         </li>
                     </div>
                     <div class="flex items-center space-x-5">
-                        <p class="text-right text-white text-[15px]">took a galley of type and scrambled it to make a
+                        <p class="text-right text-black text-[15px]">took a galley of type and scrambled it to make a
                             type specime
                         </p>
                         <li class="p-5 rounded-[50%] bg-white">
