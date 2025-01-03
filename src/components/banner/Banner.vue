@@ -32,10 +32,10 @@ const footer = ref<HTMLElement | null>(null);
                 <h1 class="text-[#BA5A5B] font-bold lg:text-[90px] text-end text-[30px] md:text-[70px]">QODIROVA</h1>
             </div>
             <div class="grid md:grid-cols-3  grid-cols-1">
-                <h1 class="text-[#fff] font-bold lg:text-[20px] text-end text-[14px]">4 Oyda Koreys Tilini 0 Dan Oson
+                <h1 class="text-[#be2fea] font-bold lg:text-[20px] text-end text-[14px]">4 Oyda Koreys Tilini 0 Dan Oson
                     O’rganib Topik 3 Olasiz </h1>
                 <div></div>
-                <h1 class="text-[#fff] font-bold lg:text-[20px] text-end text-[14px]">TOPIKdan yuqori ball olish va
+                <h1 class="text-[#be2fea] font-bold lg:text-[20px] text-end text-[14px]">TOPIKdan yuqori ball olish va
                     Koreya universitetiga grant yutish uchun yillar yo’qotish shart emas</h1>
             </div>
 
