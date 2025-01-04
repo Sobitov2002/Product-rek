@@ -55,7 +55,7 @@ const footer = ref<HTMLElement | null>(null);
 
 <style scoped>
 .mybg{
-    background-image: url('https://ik.imagekit.io/vtroph5l9/Product/xinyi-wen-qjCHPZbeXCQ-unsplash%20(1).jpg?updatedAt=1735976771393');
+    background-image: url('https://ik.imagekit.io/vtroph5l9/Product/BannerImage.jpg?updatedAt=1735977598915');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
