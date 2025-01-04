@@ -8,7 +8,7 @@ import Banner from '@/components/banner/Banner.vue'
 <template>
         <main class="min-h-screen  bg-[#f4f2f3] ">
                 <Banner />
-                <div class="custom-container max-w-4xl mx-auto p-10 ">
+                <div class=" container">
                         <Product />
                 </div>
                 <div class="bg-[#fbedeb]">

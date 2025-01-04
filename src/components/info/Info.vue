@@ -4,10 +4,10 @@ import SubTitle from '@/components/ui/SubTitle.vue';
 
 <template>
     <div
-        class=" bg-gradient-to-r from-[#EFA3A7] via-[#FAEAEB] to-[#EFA3A7] rounded-[10px] md:mt-[130px] p-10  relative">
-
+        class=" bg-gradient-to-r from-[#EFA3A7] via-[#f8c7cb] to-[#EFA3A7] rounded-[10px] md:mt-[130px] md:p-20 p-10  relative">
+        <h1 class="lg:text-[90px] md:text-[60px] sm:text-[50px] text-[30px] text-center font-bold text-white md:tracking-[20px] pb-10">MA'LUMOTLAR</h1>
         <div class=" h-full relative ">
-            <img class="absolute lg:bl md:block hidden bottom-[-200px] md:bottom-[-150px] left-1/2 transform -translate-x-1/2 md:h-[580px] h-[980px] object-cover z-[10]"
+            <img class="absolute lg:bl md:block hidden bottom-[-200px] md:bottom-[-200px] left-1/2 transform -translate-x-1/2 md:h-[750px] h-[980px] object-cover z-[10]"
                 src="https://ik.imagekit.io/vtroph5l9/Product/121.png?updatedAt=1735399271048" alt="" />
             <div class="relative  grid md:grid-cols-3 grid-cols-1 h-full gap-5">
                 <!-- Left side -->

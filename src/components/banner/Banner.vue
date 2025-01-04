@@ -8,9 +8,9 @@ const footer = ref<HTMLElement | null>(null);
 
 <template>
     <div
-        class="bg-gradient-to-r from-[#EFA3A7] via-[#fbdee0] to-[#EFA3A7] md:h-[90vh] h-[80vh] w-full p-10 z-10 relative">
-        <div class="absolute bottom-0 left-0 w-full h-full z-[-1]">
-            <img class=" md:block sm:h-[600px] md:h-[700px] bottom-0 lg:h-[900px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
+        class="mybg md:h-[90vh] h-[80vh] w-full p-10 z-10 relative">
+        <div class="absolute bottom-0  left-0 w-full h-full z-[-1]">
+            <img class=" md:block sm:h-[800px] md:h-[700px] bottom-0 lg:h-[900px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
         <div class="container max-w-screen-xl mx-auto px-4">
@@ -32,7 +32,7 @@ const footer = ref<HTMLElement | null>(null);
                 <h1 class="text-[#BA5A5B] font-bold lg:text-[90px] text-end text-[30px] md:text-[70px]">QODIROVA</h1>
             </div>
             <div class="grid md:grid-cols-3  grid-cols-1">
-                <h1 class="text-[#fff] font-bold lg:text-[20px] text-end text-[14px]">4 Oyda Koreys Tilini 0 Dan Oson
+                <h1 class="text-[#fff] font-bold lg:text-[20px] md:text-start text-end text-[14px]">4 Oyda Koreys Tilini 0 Dan Oson
                     O’rganib Topik 3 Olasiz </h1>
                 <div></div>
                 <h1 class="text-[#fff] font-bold lg:text-[20px] text-end text-[14px]">TOPIKdan yuqori ball olish va
@@ -54,5 +54,10 @@ const footer = ref<HTMLElement | null>(null);
 </template>
 
 <style scoped>
-
+.mybg{
+    background-image: url('https://ik.imagekit.io/vtroph5l9/Product/xinyi-wen-qjCHPZbeXCQ-unsplash%20(1).jpg?updatedAt=1735976771393');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 </style>
