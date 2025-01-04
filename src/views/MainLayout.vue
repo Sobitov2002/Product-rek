@@ -3,6 +3,7 @@ import Product from '@/components/Product/Product.vue'
 import Price from '@/components/price/Price.vue'
 import Info from '@/components/info/Info.vue'
 import Banner from '@/components/banner/Banner.vue'
+import Footer from '@/components/footer/Footer.vue'
 
 </script>
 <template>
@@ -16,6 +17,7 @@ import Banner from '@/components/banner/Banner.vue'
                                 <Info />
                                 <Price />
                         </div>
+                                <Footer />
                 </div>
         </main>
 </template>
