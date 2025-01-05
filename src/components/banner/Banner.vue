@@ -77,8 +77,11 @@ const footer = ref<HTMLElement | null>(null);
 
 
                 <!-- Next section -->
-                <div class="flex items-center md:justify-center justify-end mt-5  md:mt-[100px]">
-                    <Dialog />
+                <div class="flex items-center md:justify-center justify-end md:mt-5 mt-5 ">
+
+                    <h1
+                        class="bg-gradient-to-r uppercase ibm-plex-sans-bold text-white rounded-[10px] from-[#BA5A5B] via-[#ed8688] to-[#BA5A5B] px-[90px] py-[20px] md:py-[30px] md:px-[150px]">
+                        BATAFSIL</h1>
 
                 </div>
             </div>
