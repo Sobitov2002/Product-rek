@@ -15,7 +15,9 @@ const handleDialogOpen = (value: boolean) => {
 <template>
     <Dialog v-model:open="dialogOpen">
         <DialogTrigger as-child>
-            <Button variant="outline">
+            <Button
+                class="px-20 py-8 sm:px-10 ibm-plex-sans-bold  border-0 text-white hover:text-white rounded-[10px] bg-gradient-to-r from-[#BA5A5B] via-[#ed8688] to-[#BA5A5B]"
+                variant="outline">
                 JOYNI BAND QILISH
             </Button>
         </DialogTrigger>

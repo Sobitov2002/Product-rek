@@ -3,7 +3,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
@@ -14,46 +13,52 @@ import SubTitle from '@/components/ui/SubTitle.vue'
 const footer = ref<HTMLElement | null>(null);
 
 const Data = ref<any>({})
-Data.value = priceData
-
-
+Data.value = priceData;
 
 </script>
 <template>
-    <div ref="footer" class="md:mt-[130px] mt-[50px]">
-        <SubTitle title="Ta'riflar"></SubTitle>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:grid-cols-2 grid-cols-1 relative mt-5">
-            <Card class="shadow-2xl bg-white backdrop-blur-md rounded-[10px] p-4 mt-6 relative"
+    <div ref="footer" class="md:mt-[130px] mt-[50px] mb-10">
+        <SubTitle title="TA'RIFLAR"></SubTitle>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-20 sm:grid-cols-2 grid-cols-1 relative mt-5">
+            <Card class="shadow-2xl  bg-white backdrop-blur-md rounded-[10px] p-4 pb-10 mt-6 relative"
                 v-for="(data, index) in priceData" :key="index">
                 <div class="relative">
-                    <img class="absolute top-[-50px] left-[50%] transform -translate-x-1/2 h-[140px] w-[140px]"
-                        src="../../assets/image/1.svg" alt="">
+                    <div
+                        class="absolute bg-[#EFA3A7] top-[-50px] left-[50%] transform -translate-x-1/2 h-[80px] w-[80px] rounded-full flex items-center justify-center">
+                        <i :class="['fa-solid', data.icon.class, data.icon.size, data.icon.color]"></i>
+                    </div>
                 </div>
-                <CardHeader class="mt-[60px] flex items-center">
-                    <CardTitle class="text-[40px]">{{ data.text }}</CardTitle>
-                    <CardDescription>Price: {{ data.price }} so'm</CardDescription>
+                <CardHeader class="mt-[60px]  flex  items-center">
+                    <CardTitle class="text-[30px]  ibm-plex-sans-semibold text-[#BA5A5B]">{{ data.text }}
+                    </CardTitle>
+                    <h1 class="ibm-plex-sans-regular">Biz bialn kores tili osonroq</h1>
                 </CardHeader>
                 <CardContent>
                     <ul>
-                        <li class="mt-4 flex justify-start" v-for="(item, idx) in data.subtitle" :key="item.id">
-                            <span>
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                    viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
-                                </svg>
-                            </span>
-                            {{ item.title }}
+                        <li class="mt-4 flex items-center gap-4" v-for="(item, idx) in data.subtitle" :key="item.id">
+
+                            <div class="text-gray-800 flex justify-center">
+                                <span
+                                    class=" w-4 h-4 bg-[#BA5A5B] mt-1 mr-2 text-white font-bold rounded-full shrink-0">
+                                </span>
+                                <div>
+                                    {{ item.title }}</div>
+                            </div>
                         </li>
                     </ul>
                 </CardContent>
-                <CardFooter>
+                <div class="flex justify-center">
+                    <CardDescription class="ibm-plex-sans-semibold text-[25px] mt-5 mb-10 text-[#BA5A5B]">{{ data.price
+                        }}
+                        SO'M</CardDescription>
+                </div>
+                <div class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2">
                     <Dialog />
-                </CardFooter>
+                </div>
             </Card>
         </div>
     </div>
 </template>
+
 
 

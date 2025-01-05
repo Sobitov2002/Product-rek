@@ -8,12 +8,13 @@ const props = defineProps({
 </script>
 <template >
     <div class="flex justify-center items-center my-20">
-        <h1 class="text-[50px] text-[#BA5A5B] font-bold text-center">
+        <h1
+            class="text-[40px] transform  ibm-plex-sans-semibold tracking-normal text-[#BA5A5B] font-bold text-center">
             {{ props.title }}
         </h1>
     </div>
 </template>
 
-<style>
-    
+<style scoped>
+        
 </style>
