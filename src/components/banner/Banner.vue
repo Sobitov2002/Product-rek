@@ -25,59 +25,62 @@ const footer = ref<HTMLElement | null>(null);
                 </div>
             </div>
 
-            <!-- Next section -->
-            <div class="grid md:grid-cols-3  grid-cols-1 mt-4 md:mt-[150px]  ">
-                <h1
-                    class="text-[#552e2e] uppercase ibm-plex-sans-light lg:text-[20px] md:block hidden md:text-start text-end text-[14px]">
-                    topik
-                    yuqori ball olish va Koreya </h1>
-                <div></div>
-                <h1
-                    class="text-[#552e2e] uppercase ibm-plex-sans-light lg:text-[20px] md:block hidden text-end text-[14px]">
-                    topik
-                    yuqori ball
-                    olish
-                    va Koreya</h1>
-            </div>
+            <div class="md:mt-0 mt-10">
+                <!-- Next section -->
+                <div class="grid md:grid-cols-3  grid-cols-1 mt-4 md:mt-[150px]  ">
+                    <h1
+                        class="text-[#552e2e] uppercase ibm-plex-sans-light lg:text-[20px] md:block hidden md:text-start text-end text-[14px]">
+                        topik
+                        yuqori ball olish va Koreya </h1>
+                    <div></div>
+                    <h1
+                        class="text-[#552e2e] uppercase ibm-plex-sans-light lg:text-[20px] md:block hidden text-end text-[14px]">
+                        topik
+                        yuqori ball
+                        olish
+                        va Koreya</h1>
+                </div>
 
-            <!-- Next section -->
-            <div class="md:flex md:justify-between justify-end mt-5">
-                <h1
-                    class="text-[#BA5A5B] ibm-plex-sans-semibold font-bold  lg:text-[90px] text-end text-[30px] md:text-[70px]">
-                    MADINA</h1>
-                <div></div>
-                <h1
-                    class="text-[#BA5A5B] ibm-plex-sans-semibold font-bold lg:text-[90px] text-end text-[30px] md:text-[70px]">
-                    QODIROVA</h1>
-            </div>
-            <!-- Next section -->
-            <div class="flex md:justify-between  justify-end mt-4 ">
-                <h1
-                    class="text-[#BA5A5B] mx-2 ibm-plex-sans-semibold font-bold  lg:text-[50px] text-end text-[20px] md:text-[40px]">
-                    MADINA</h1>
-                <div></div>
-                <h1
-                    class="text-[#BA5A5B] ibm-plex-sans-semibold font-bold lg:text-[50px] text-end text-[20px] md:text-[40px]">
-                    QODIROVA</h1>
-            </div>
+                <!-- Next section -->
+                <div class="md:flex md:justify-between justify-end mt-5">
+                    <h1
+                        class="text-[#BA5A5B] ibm-plex-sans-semibold font-bold  lg:text-[90px] text-end text-[30px] md:text-[70px]">
+                        MADINA</h1>
+                    <div></div>
+                    <h1
+                        class="text-[#BA5A5B] ibm-plex-sans-semibold font-bold lg:text-[90px] text-end text-[30px] md:text-[70px]">
+                        QODIROVA</h1>
+                </div>
+                <!-- Next section -->
+                <div class="flex md:justify-between  justify-end mt-4 ">
+                    <h1
+                        class="text-[#BA5A5B] mx-2 ibm-plex-sans-semibold font-bold  lg:text-[50px] text-end text-[20px] md:text-[40px]">
+                        MADINA</h1>
+                    <div></div>
+                    <h1
+                        class="text-[#BA5A5B] ibm-plex-sans-semibold font-bold lg:text-[50px] text-end text-[20px] md:text-[40px]">
+                        QODIROVA</h1>
+                </div>
 
-            <!-- Next section -->
-            <div class="grid md:grid-cols-3  grid-cols-1 mt-5">
-                <h1 class="text-[#fff] uppercase ibm-plex-sans-light lg:text-[20px] md:text-start text-end text-[14px]">
-                    4 Oyda Koreys Tilini
-                    0 Dan Oson
-                    O’rganib Topik 3 Olasiz </h1>
-                <div></div>
-                <h1 class="text-[#fff] uppercase ibm-plex-sans-light lg:text-[20px] text-end text-[14px]">TOPIKdan
-                    yuqori ball olish va
-                    Koreya universitetiga grant yutish uchun yillar yo’qotish shart emas</h1>
-            </div>
+                <!-- Next section -->
+                <div class="grid md:grid-cols-3  grid-cols-1 mt-5">
+                    <h1
+                        class="text-[#fff] uppercase ibm-plex-sans-light lg:text-[20px] md:text-start text-end text-[14px]">
+                        4 Oyda Koreys Tilini
+                        0 Dan Oson
+                        O’rganib Topik 3 Olasiz </h1>
+                    <div></div>
+                    <h1 class="text-[#fff] uppercase ibm-plex-sans-light lg:text-[20px] text-end text-[14px]">TOPIKdan
+                        yuqori ball olish va
+                        Koreya universitetiga grant yutish uchun yillar yo’qotish shart emas</h1>
+                </div>
 
 
-            <!-- Next section -->
-            <div class="flex items-center md:justify-center justify-end mt-5  md:mt-[100px]">
-                <Dialog />
+                <!-- Next section -->
+                <div class="flex items-center md:justify-center justify-end mt-5  md:mt-[100px]">
+                    <Dialog />
 
+                </div>
             </div>
         </div>
 
