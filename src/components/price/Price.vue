@@ -29,7 +29,7 @@ Data.value = priceData;
                     </div>
                 </div>
                 <CardHeader class="mt-[60px]  flex  items-center">
-                    <CardTitle class="text-[30px]  ibm-plex-sans-semibold text-[#BA5A5B]">{{ data.text }}
+                    <CardTitle class="text-[30px]   text-[#BA5A5B]">{{ data.text }}
                     </CardTitle>
                     <h1 class="ibm-plex-sans-regular text-gray-500">Biz bialn kores tili osonroq</h1>
                 </CardHeader>
