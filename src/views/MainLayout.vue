@@ -7,7 +7,7 @@ import Footer from '@/components/footer/Footer.vue'
 
 </script>
 <template>
-        <main class="min-h-screen  bg-[#f4f2f3] ">
+        <main class="min-h-screen  bg-[] ">
                 <Banner />
                 <div class=" container">
                         <Product />
