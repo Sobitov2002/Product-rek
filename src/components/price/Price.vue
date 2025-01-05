@@ -31,12 +31,11 @@ Data.value = priceData;
                 <CardHeader class="mt-[60px]  flex  items-center">
                     <CardTitle class="text-[30px]  ibm-plex-sans-semibold text-[#BA5A5B]">{{ data.text }}
                     </CardTitle>
-                    <h1 class="ibm-plex-sans-regular">Biz bialn kores tili osonroq</h1>
+                    <h1 class="ibm-plex-sans-regular text-gray-500">Biz bialn kores tili osonroq</h1>
                 </CardHeader>
                 <CardContent>
                     <ul>
                         <li class="mt-4 flex items-center gap-4" v-for="(item, idx) in data.subtitle" :key="item.id">
-
                             <div class="text-gray-800 flex justify-center">
                                 <span
                                     class=" w-4 h-4 bg-[#BA5A5B] mt-1 mr-2 text-white font-bold rounded-full shrink-0">
