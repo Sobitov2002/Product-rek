@@ -10,7 +10,7 @@ const footer = ref<HTMLElement | null>(null);
 <template>
     <div class="mybg md:h-[100vh] h-[80vh] w-full p-10 z-10 relative">
         <div class="absolute bottom-0  left-0 w-full h-full z-[-1]">
-            <img class=" md:block sm:h-[800px] h-[110%] md:h-[700px] bottom-0 lg:h-[800px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
+            <img class=" md:block sm:h-[800px] h-[110%] md:h-[700px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
         <div class="container max-w-screen-xl mx-auto px-4 ">
