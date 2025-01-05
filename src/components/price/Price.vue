@@ -47,7 +47,7 @@ Data.value = priceData;
                     </ul>
                 </CardContent>
                 <div class="flex justify-center">
-                    <CardDescription class="ibm-plex-sans-semibold text-[25px] mt-5 mb-10 text-[#BA5A5B]">{{ data.price
+                    <CardDescription class="ibm-plex-sans-regular text-[30px] mt-5 mb-10 text-[#BA5A5B]">{{ data.price
                         }}
                         SO'M</CardDescription>
                 </div>
