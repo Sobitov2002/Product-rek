@@ -3,45 +3,62 @@
 
 </script>
 <template >
-    <footer class="bg-[#EFA3A7] w-full pt-5  grid grid-cols-2 gap-3 mt-20">
-        <div class="px-10 py-5 flex-col justify-center ">
-            <h1 class="text-[30px]  text-gray-900 ibm-plex-sans-regular font-bold text-center uppercase">Dina Korean</h1>
-            <p class="text-center text-gray-900 ibm-plex-sans-regular text-sm leading-relaxed max-w-2xl">
-                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized
-                by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and
-                trouble
-                that are bound to ensue; and equal blame belongs to those who fail in their duty.
-            </p>
-        </div>
-        <div>
-            <div class="flex justify-center gap-4">
-                <a class="border-2 border-[#000] hover:border-white rounded-full p-3 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
-                    href="#">
-                    <i class="fa-brands text-[#000] fa-instagram text-[20px]"></i>
-                </a>
-
-                <a class="border-2 border-[#000] hover:border-white rounded-full p-3 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
-                    href="#">
-                    <i class="fa-brands text-[#000]  fa-telegram text-[20px]"></i>
-                </a>
-
-                <a class="border-2 border-[#000] hover:border-white rounded-full p-3 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
-                    href="#">
-                    <i class="fa-brands text-[#000] fa-facebook text-[20px]"></i>
-                </a>
-                <a class="border-2 border-[#000] hover:border-white rounded-full p-3 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
-                    href="#">
-                    <i class="fa-brands text-[#000] fa-youtube text-[20px]"></i>
-                </a>
-                <a class="border-2 border-[#000] hover:border-white rounded-full p-3 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
-                    href="#">
-                    <i class="fa-brands text-[#000] fa-twitter text-[20px]"></i>
-                </a>
+    <footer class="bg-[#EFA3A7] w-full pt-5  mt-20">
+        <h1 class="text-[30px]  text-gray-900 ibm-plex-sans-regular font-bold text-center uppercase">Dina Korean</h1>
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-4 container">
+            <div class="px-10 py-5 flex flex-col justify-center items-center h-full">
+                <p class="text-center text-gray-900 ibm-plex-sans-regular text-sm leading-relaxed max-w-2xl">
+                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    demoralized
+                    by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and
+                    trouble
+                    that are bound to ensue; and equal blame belongs to those who fail in their duty.
+                </p>
 
             </div>
-        </div>
 
+
+            <div>
+                <div class="md:flex md:flex-col items-center grid grid-cols-2  gap-2  mb-10">
+                    <div class="flex items-center ">
+                        <a class=" p-2 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
+                            href="#">
+                            <i class="fa-brands fa-instagram text-[#000] text-[25px]"></i>
+                        </a>
+                        <span class="text-[#000] text-[20px]">Instagram</span>
+                    </div>
+
+                    <div class="flex items-center ">
+                        <a class=" p-2 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
+                            href="#">
+                            <i class="fa-brands fa-telegram text-[#000] text-[25px]"></i>
+                        </a>
+                        <span class="text-[#000] text-[20px]">Telegram</span>
+                    </div>
+
+                    <div class="flex items-center ">
+                        <a class=" p-2 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
+                            href="#">
+                            <i class="fa-brands fa-facebook text-[#000] text-[25px]"></i>
+                        </a>
+                        <span class="text-[#000] text-[20px]">Facebook</span>
+                    </div>
+
+                    <div class="flex items-center">
+                        <a class=" p-2 hover:bg-white hover:text-[#EFA3A7] transition flex justify-center items-center"
+                            href="#">
+                            <i class="fa-brands fa-youtube text-[#000] text-[25px]"></i>
+                        </a>
+                        <span class="text-[#000] text-[20px]">YouTube</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
         <!-- <div>
             <ul class="flex justify-center gap-4">
                 <li
@@ -59,12 +76,12 @@
             </ul>
         </div> -->
     </footer>
-        <div class="w-full bg-[#BA5A5B] p-4 text-center">
-            <p class="text-sm ibm-plex-sans-regular">Telefon raqam: <a href="tel:+998903199890"
-                    class="font-bold underline">+998 90 319 98
-                    90</a>
-            </p>
-        </div>
+    <div class="w-full bg-[#BA5A5B] p-4 text-center">
+        <p class="text-sm ibm-plex-sans-regular">Telefon raqam: <a href="tel:+998903199890"
+                class="font-bold underline">+998 90 319 98
+                90</a>
+        </p>
+    </div>
 
 </template>
 

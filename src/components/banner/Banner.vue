@@ -13,7 +13,7 @@ const footer = ref<HTMLElement | null>(null);
             <img class=" md:block sm:h-[800px] h-[110%] md:h-[700px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
-        <div class="container max-w-screen-xl mx-auto px-4 ">
+        <div class="container max-w-screen-xl mx-auto px-0 ">
             <!-- First section -->
             <div class="flex justify-between items-center space-x-4">
                 <div class="bg-white p-4 rounded-[10px] shadow-xl">

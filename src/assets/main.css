@@ -95,6 +95,7 @@
   font-weight: 600;
   font-style: bold;
   transform: scaleY(2);
+  /* transform: scaleX(02); */
 }
 
 .ibm-plex-sans-bold-italic {
