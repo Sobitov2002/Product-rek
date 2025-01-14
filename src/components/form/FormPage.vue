@@ -54,7 +54,7 @@ const submit = async () => {
         console.log(text);
         
     try {
-        const response = await axios.post(`https://dina-academy-production.up.railway.app/order`, text, {
+        const response = await axios.post(`https://dina-academy-production-391a.up.railway.app/order`, text, {
         
            headers: {
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUwNDU4Mn0.-pCxMz2H3wTbI9HsDFS3nyeSC7PaDo60WyZvX5yfIkI" 
