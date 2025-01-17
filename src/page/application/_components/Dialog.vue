@@ -16,9 +16,9 @@ const handleDialogOpen = (value: boolean) => {
     <Dialog v-model:open="dialogOpen">
         <DialogTrigger as-child>
             <Button
-                class="px-20 py-8 sm:px-10 ibm-plex-sans-bold  border-0 text-white hover:text-white rounded-[10px] bg-gradient-to-r from-[#BA5A5B] via-[#ed8688] to-[#BA5A5B]"
+                class="px-20 py-8 sm:px-10 font-[gilroy] text-[25.09px] border-0 text-white rounded-[10px] bg-[#BC6360]"
                 variant="outline">
-                JOYNI BAND QILISH
+                Joyni band qilish
             </Button>
         </DialogTrigger>
         <DialogContent class=" grid-rows-[auto_minmax(0,1fr)_auto] p-0 max-h-[90dvh]">
@@ -26,6 +26,4 @@ const handleDialogOpen = (value: boolean) => {
         </DialogContent>
     </Dialog>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>

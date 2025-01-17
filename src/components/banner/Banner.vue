@@ -1,27 +1,27 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Price from '@/components/price/Price.vue'
-import Dialog from '@/components/form/Dialog.vue'
+// import Price from '@/components/price/Price.vue'
+import Dialog from '@/page/application/_components/Dialog.vue'
 const footer = ref<HTMLElement | null>(null);
 
 
 </script>
 
 <template>
-    <div class="mybg md:h-[100vh] h-[80vh] w-full p-10 z-10 relative">
+    <div class="mybg max-h-[814px] w-full p-10 z-10 relative">
         <div class="absolute bottom-0  left-0 w-full h-full z-[-1]">
             <img class=" md:block sm:h-[800px] h-[110%] md:h-[700px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
-        <div class="container max-w-screen-xl mx-auto px-0 ">
+        <div class=" max-w-screen-xl mx-auto px-0 ">
             <!-- First section -->
             <div class="flex justify-between items-center space-x-4">
                 <div class="bg-white p-4 rounded-[10px] shadow-xl">
-                    <h1 class="text-[#BA5A5B] font-bold text-md sm:text-2xl md:text-3xl">5 NOYABR</h1>
+                    <h1 class="text-[#CB7C7E] oswald text-[48.12px]sm:text-2xl md:text-3xl">5 NOYABR</h1>
                 </div>
                 <div></div>
                 <div class="bg-white p-4 rounded-[10px] shadow-xl">
-                    <h1 class="text-[#BA5A5B] font-bold text-md sm:text-2xl md:text-3xl">6 QOLDI</h1>
+                    <h1 class="text-[#CB7C7E] font-[] text-md sm:text-2xl md:text-3xl">6 QOLDI</h1>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@ const footer = ref<HTMLElement | null>(null);
 </template>
 
 <style scoped>
-.mybg{
+.mybg {
     background-image: url('https://ik.imagekit.io/vtroph5l9/Product/BannerImage.jpg?updatedAt=1735977598915');
     background-size: cover;
     background-position: center;

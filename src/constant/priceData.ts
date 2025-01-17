@@ -8,7 +8,7 @@ export   const priceData = [
         { id: '3', title: "Kursdan so’ng barcha materiallarga 4 oylik kirish huquqi" },
       ],
       price: 299000,
-      icon: { class: 'fa-user', size: 'text-3xl', color: 'text-white' }
+      icon: { class: '../src/assets/icon/Vector.svg', size: 'text-3xl', color: 'text-white' }
     },
     {
       text: 'GOLD',
@@ -18,7 +18,7 @@ export   const priceData = [
         { id: '3', title: "Kursdan so’ng barcha materiallarga 4 oylik kirish huquqi" },
       ],
       price: 450000,
-      icon: { class: 'fa-user-group',size: 'text-3xl', color: 'text-white'  }
+      icon: { class: '../src/assets/icon/Medal First Place.svg',size: 'text-3xl', color: 'text-white'  }
     },
     {
       text: 'PREMIUM',
@@ -28,6 +28,6 @@ export   const priceData = [
         { id: '3', title: "Kursdan so’ng barcha materiallarga 4 oylik kirish huquqi" },
       ],
       price: 499000,
-      icon: { class: 'fa-medal',size: 'text-3xl', color: 'text-white'  }
+      icon: { class: '../src/assets/icon/Guarantee.svg',size: 'h-[52px]', color: 'text-white'  }
     }
   ];

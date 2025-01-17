@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, defineEmits, watchEffect } from 'vue';
 import axios from 'axios';
-import Button from './_ui/Button.vue';
-import Select from './_ui/Select.vue'
+import Button from '../_ui/Button.vue';
+import Select from '../_ui/Select.vue'
 import { Circle } from 'lucide-vue-next';
 const emit = defineEmits(['updateDialogOpen']);
 
@@ -11,20 +11,6 @@ const formData = ref({
     firstName:'',
     phoneNumber: '',
 });
-
-const sendSelect = ref<string>('')
-let externalValue: string = '';
-const handleSelectChange = (value: string)=>{
-    sendSelect.value = value;
-
-}
-watchEffect(()=>{
-    externalValue = sendSelect.value;
-    console.log(externalValue);
-    
-})
-
-
 
 const isSuccess = ref(false);
 const dialogOpen = ref(false);
