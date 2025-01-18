@@ -10,7 +10,7 @@ const footer = ref<HTMLElement | null>(null);
 <template>
     <div class="prise-img md:min-h-[814px] w-full py-10 z-10 relative">
         <div class="absolute bottom-0  left-0 w-full h-full z-[-1]">
-            <img class=" md:block sm:h-[600px] h-[692px] md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
+            <img class=" md:block sm:h-[600px] h-[592px] pt-20 sm:p-0 md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
         <div class="">
@@ -31,10 +31,10 @@ const footer = ref<HTMLElement | null>(null);
                 </div>
             </div>
             <!-- Next section -->
-            <div class="lg:mt-[100px] mt-[50px]">
-                <div class="grid md:grid-cols-2  container m-auto grid-cols-1 relative  top-14 ">
+            <div class="lg:mt-[100px] mt-[30px]">
+                <div class="grid md:grid-cols-2  sm:container m-auto grid-cols-1 relative  top-14 ">
                     <h1
-                        class="text-white font-[Freestyle] lg:text-[55px] md:text-[30px] text-[45px] md:block  md:text-start text-end ">
+                        class="text-white font-[Freestyle] lg:text-[55px] md:text-[50px] text-[39px] md:block  md:text-start text-end ">
                         Topik
                         yuqori ball olish va Koreya </h1>
 
@@ -80,7 +80,7 @@ const footer = ref<HTMLElement | null>(null);
             </div>
             <div
                 class="py-[16px]  md:w-[443px] w-[330px] h-[105px] px-[23px] bg-[#A43D3F] rounded-tl-[75px] md:self-start self-end">
-                <p class="text-[20.6px] font-[gilroy] leading-[30.16px] text-white">
+                <p class="md:text-[20.6px] text-[15.6px] text-end font-[gilroy] md:leading-[30.16px] text-white">
                     Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
                 </p>
             </div>
