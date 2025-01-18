@@ -2,7 +2,7 @@
 import Product from '@/page/foryou/Page.vue'
 import Price from '@/page/application/Page.vue'
 import Info from '@/page/details/Page.vue'
-import Banner from '@/components/banner/Banner.vue'
+import Banner from '@/page/banner/Page.vue'
 
 </script>
 <template>
@@ -10,7 +10,6 @@ import Banner from '@/components/banner/Banner.vue'
                 <Banner />
                 <Product />
                 <Info />
-                <Price />
-                     
+                <Price />    
         </main>
 </template>
