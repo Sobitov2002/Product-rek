@@ -16,7 +16,7 @@ const handleDialogOpen = (value: boolean) => {
     <Dialog v-model:open="dialogOpen">
         <DialogTrigger as-child>
             <Button
-                class="px-20 py-8 sm:px-10 font-[gilroy] text-[25.09px] border-0 text-white rounded-[10px] bg-[#BC6360]"
+                class="md:px-20 px-16 py-8 sm:px-10 font-[gilroy] text-[25.09px] border-0 text-white rounded-[10px] bg-[#BC6360]"
                 variant="outline">
                 Joyni band qilish
             </Button>
