@@ -15,7 +15,7 @@ const footer = ref<HTMLElement | null>(null);
         </div>
         <div class="">
             <!-- First section -->
-            <div class="flex md:container justify-between items-center space-x-4">
+            <div class="flex md:container w-[90%] m-auto justify-between items-center space-x-4">
                 <div class="bg-white w-[246px]  p-1 md:py-2 rounded-[21.94px]">
                     <h1
                         class="text-[#CB7C7E] text-center font-[oswald] text-[27px] md:text-[40px] font-bold lg:text-[48.12px]   lg:leading-[71.32px]">
@@ -32,7 +32,7 @@ const footer = ref<HTMLElement | null>(null);
             </div>
             <!-- Next section -->
             <div class="lg:mt-[100px] mt-[30px]">
-                <div class="grid md:grid-cols-2  sm:container m-auto grid-cols-1 relative  top-14 ">
+                <div class="grid md:grid-cols-2 w-[90%]  sm:container m-auto grid-cols-1 relative  top-14 ">
                     <h1
                         class="text-white font-[Freestyle] lg:text-[55px] md:text-[50px] text-[39px] md:block  md:text-start text-end ">
                         Topik
@@ -44,7 +44,7 @@ const footer = ref<HTMLElement | null>(null);
                         olish
                         va Koreya</h1>
                 </div>
-                <div class="md:container sm:mt-0 mt-5">
+                <div class="md:container w-[90%] m-auto sm:mt-0 mt-5">
 
                     <!-- Next section -->
                     <div class="md:flex  md:justify-between p-0 justify-end ">

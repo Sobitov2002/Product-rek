@@ -19,7 +19,7 @@ data.value = productData
                 siz
                 uchun</p>
         </div>
-        <ul class="grid lg:grid-cols-3 container md:grid-cols-2 grid-cols-1 gap-10 mt-20">
+        <ul class="grid lg:grid-cols-3 container sm:grid-cols-2 grid-cols-1 gap-10 mt-20">
             <li v-for="(data, index) in productData">
                 <div
                     class="relative shadow-[3px_22px_27.6px_-3px_rgba(0,0,0,0.5)] bg-[#F7D8D6] md:w-[325px] rounded-[29.4px] h-[309.48px] mx-auto">
