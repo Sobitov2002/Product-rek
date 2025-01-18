@@ -32,7 +32,15 @@
 }
 
 .prise-img {
-  background-image: url(../assets/image/backgraundImg.svg);
+  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Group%201%204.png?updatedAt=1737192663032);
+  background-color: #ED9EA1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prise {
+  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Group%201%205.png?updatedAt=1737192729248);
   background-color: #ED9EA1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +48,7 @@
 }
 
 .foryou-img {
-  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Layer%206%201.svg?updatedAt=1737187633852);
+  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Layer%206%201.png?updatedAt=1737192618585);
   background-size: cover;
   background-repeat: no-repeat;
 }

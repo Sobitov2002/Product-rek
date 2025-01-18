@@ -3,7 +3,7 @@ import { detailData } from './store/index';
 </script>
 
 <template>
-    <div class="prise-img min-h-[645px]  p-10 sm:p-0  relative">
+    <div class="prise min-h-[645px]  p-10 sm:p-0  relative">
         <!-- Katta sarlavha -->
         <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);" class="font-[oswald] text-center font-bold text-white leading-[1.2] pb-10
             lg:text-[138px] md:text-[100px] sm:text-[70px] text-[50px]">
