@@ -31,7 +31,7 @@ const footer = ref<HTMLElement | null>(null);
                 </div>
             </div>
             <!-- Next section -->
-            <div class="lg:mt-[100px] mt-[30px]">
+            <div class="lg:mt-[80px] mt-[30px]">
                 <div class="grid md:grid-cols-2 w-[90%]  sm:container m-auto grid-cols-1 relative  top-14 ">
                     <h1
                         class="text-white font-[Freestyle] lg:text-[55px] md:text-[50px] text-[39px] md:block  md:text-start text-end ">
@@ -44,7 +44,7 @@ const footer = ref<HTMLElement | null>(null);
                         olish
                         va Koreya</h1>
                 </div>
-                <div class="md:container w-[90%] m-auto sm:mt-0 mt-5">
+                <div class="md:container w-[90%] m-auto  mt-5">
 
                     <!-- Next section -->
                     <div class="md:flex  md:justify-between p-0 justify-end ">
@@ -74,17 +74,28 @@ const footer = ref<HTMLElement | null>(null);
         <div class="flex w-full md:justify-between justify-end flex-wrap md:flex-nowrap gap-4">
             <div
                 class="py-[16px] md:block hidden md:w-[443px] w-[330px] h-[105px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2  md:self-start self-end">
-                <p class="md:text-[30.53px] sm:text-[25px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
+                <p
+                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
                     4 oyda Koreys tilini 0 dan oson o‘rganib topik 3 olasiz
                 </p>
             </div>
+            <div class=" sm:w-auto">
+                <p
+                    class="text-[#272727] rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy]">
+                    Batafsil
+                </p>
+            </div>
+
+            <!-- The second div with text -->
             <div
-                class="py-[16px]  md:w-[443px] w-[330px] h-[105px] px-[23px] bg-[#A43D3F] rounded-tl-[75px] md:self-start self-end">
-                <p class="md:text-[20.6px] text-[15.6px] text-end font-[gilroy] md:leading-[30.16px] text-white">
+                class="py-[16px] md:w-[443px] w-[330px] md:h-[105px] px-[23px] bg-[#A43D3F] rounded-tl-[75px] md:self-start self-end">
+                <p
+                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] text-end font-[gilroy] md:leading-[30.16px] text-white">
                     Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
                 </p>
             </div>
         </div>
+
 
 
     </div>
