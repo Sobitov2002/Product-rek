@@ -8,7 +8,7 @@ const emit = defineEmits(['updateDialogOpen']);
 
 const formData = ref({
     lastName: '',
-    firstName:'',
+    firstName: '',
     phoneNumber: '',
 });
 
@@ -16,47 +16,47 @@ const isSuccess = ref(false);
 const dialogOpen = ref(false);
 const isLoading = ref(false);
 
+const externalValue = ref(''); // Add this line to define externalValue
 
+const handleSelectChange = (value: string) => {
+    externalValue.value = value; // Update externalValue when selection changes
+};
 
 const submit = async () => {
-    if (externalValue === '') {
+    if (externalValue.value === '') {
         alert("Ta'rifni tanlang");
-        return 
-            
+        return;
     }
     isLoading.value = true;
-   
-
-
 
     const text = {
         firstName: formData.value.firstName,
         lastName: formData.value.lastName,
         phone: formData.value.phoneNumber,
         type: 'video',
-        variant: externalValue,
+        variant: externalValue.value,
         time: new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric' }).format(new Date())
     };
-        console.log(text);
-        
+    console.log(text);
+
     try {
         const response = await axios.post(`https://dina-academy-production-391a.up.railway.app/order`, text, {
-        
-           headers: {
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUwNDU4Mn0.-pCxMz2H3wTbI9HsDFS3nyeSC7PaDo60WyZvX5yfIkI" 
-           }
+            headers: {
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUwNDU4Mn0.-pCxMz2H3wTbI9HsDFS3nyeSC7PaDo60WyZvX5yfIkI"
+            }
         });
         console.log(response);
-        
+
         isSuccess.value = true;
         dialogOpen.value = false;
         emit('updateDialogOpen', dialogOpen.value);
 
-        formData.value.fullName = '';
+        formData.value.lastName = '';
         formData.value.phoneNumber = '';
     } catch (error) {
         console.error('Xatolik:', error);
         isSuccess.value = false;
+        alert('Xatolik yuz berdi. Iltimos, qayta urinib ko\'ring.'); // Add user feedback for errors
     } finally {
         isLoading.value = false;
     }
@@ -65,7 +65,7 @@ const submit = async () => {
 
 <template>
     <form @submit.prevent="submit" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
-        <h1 class="text-gray-700 text-[25px] font-bold text-center">
+        <h1 class="text-[#A43D3F] text-[30px]  font-[oswald] text-center">
             Joyingizni band qilish uchun ma'lumotlaringizni yuboring!
         </h1>
         <div>

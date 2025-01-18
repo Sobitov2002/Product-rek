@@ -31,7 +31,7 @@ Data.value = priceData;
                             {{ data.text }}
                         </CardTitle>
                         <p
-                            class="font-[Freestyle] text-[43.61px] -mt-6 leading-[51.36px] text-[#0F0F0F] font-light pt-0">
+                            class="font-[Freestyle] sm:text-[43.61px] text-[38px] -mt-6 leading-[51.36px] text-[#0F0F0F] font-light pt-0">
                             Biz bilan kores tili osonroq
                         </p>
                     </CardHeader>
