@@ -51,8 +51,7 @@ const footer = ref<HTMLElement | null>(null);
                         <h1 class="text-[#A43D3F]  font-[oswald] text-[60px]  font-bold  md:text-[90.27px] text-end  ">
                             MADINA</h1>
                         <div></div>
-                        <h1
-                            class="text-[#A43D3F] font-[oswald]  top-10 font-bold text-[90.27px] hidden md:block text-end md:text-[80px]">
+                        <h1 class="text-[#A43D3F]  font-[oswald] text-[60px]  font-bold  md:text-[90.27px] text-end">
                             MADINA</h1>
                     </div>
                     <!-- Next section -->

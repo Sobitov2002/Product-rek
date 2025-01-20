@@ -40,7 +40,7 @@ const submit = async () => {
     console.log(text);
 
     try {
-        const response = await axios.post(`https://dina-academy-production-391a.up.railway.app/order`, text, {
+        const response = await axios.post(`https://dina-backend-newgit.fly.dev/order`, text, {
             headers: {
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUwNDU4Mn0.-pCxMz2H3wTbI9HsDFS3nyeSC7PaDo60WyZvX5yfIkI"
             }
@@ -51,8 +51,7 @@ const submit = async () => {
         dialogOpen.value = false;
         emit('updateDialogOpen', dialogOpen.value);
 
-        formData.value.lastName = '';
-        formData.value.phoneNumber = '';
+        formData.value = { firstName: '', lastName: '', phoneNumber: '' };
     } catch (error) {
         console.error('Xatolik:', error);
         isSuccess.value = false;
@@ -69,13 +68,13 @@ const submit = async () => {
             Joyingizni band qilish uchun ma'lumotlaringizni yuboring!
         </h1>
         <div>
-            <label class="block mb-2" for="fullName">Ismingizni kiriting</label>
+            <label class="block mb-2" for="firstName">Ismingizni kiriting</label>
             <input required v-model="formData.firstName" id="fullName" type="text"
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Ism" />
         </div>
         <div>
-            <label class="block mb-2" for="fullName">Familyangizni kiriting</label>
+            <label class="block mb-2" for="lastName">Familyangizni kiriting</label>
             <input required v-model="formData.lastName" id="fullName" type="text"
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Familya" />
