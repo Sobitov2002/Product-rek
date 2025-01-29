@@ -3,28 +3,28 @@ import { detailData , detailDataTwo } from './store/index';
 </script>
 
 <template>
-    <div class="prise min-h-[600px]  py-20 sm:p-0  relative">
+    <div class="prise min-h-[600px] py-10 md:py-20 sm:p-0  relative">
         <!-- Katta sarlavha -->
-        <div class="pt-16">
+        <div class="">
             <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);" class="font-[oswald] text-center font-bold text-white leading-[1.2] pb-10
-            lg:text-[103px] md:text-[100px] mt-  sm:text-[70px] text-[50px]">
+            lg:text-[103px] md:text-[100px] mt-  sm:text-[70px] text-[40px]">
                 Kursda sizni nimalar kutmoqda?
             </h1>
 
             <!-- Katta qizil sarlavha -->
-            <p class="absolute top-[110px] right-[9%] 
-            lg:text-[121.98px] md:text-[140px] sm:text-[90px] text-[60px] 
+            <p class="absolute md:top-[110px] top-[130px] right-[9%] 
+            lg:text-[121.98px] md:text-[140px]  sm:text-[45px]  text-[30px]
             font-[Freestyle] text-[#A43D3F]">
                 Kursda sizni nimalar kutmoqda
             </p>
 
             <div class="relative custom mx-auto min-h-[500px]">
                 <!-- Rasm -->
-                <img class="absolute bottom-0 md:block hidden left-1/2 transform -translate-x-1/2 
+                <img class="absolute bottom-0 lg:block hidden left-1/2 transform -translate-x-1/2 
                 max-w-[535.83px] w-full h-auto object-cover z-[10]"
                     src="https://ik.imagekit.io/vtroph5l9/Product/3%201.svg?updatedAt=1737146763307" alt="" />
 
-                <div class="relative grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 h-full gap-5 mt-[00px]">
+                <div class="relative grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 h-full gap-5 mt-[00px]">
                     <!-- Chap qism -->
                     <ul class="items-center max-w-full ">
                         <div v-for="(item, index) in detailData" :key="index"
@@ -46,7 +46,7 @@ import { detailData , detailDataTwo } from './store/index';
                     </ul>
 
                     <!-- O'rta qism -->
-                    <div class="md:block hidden"></div>
+                    <div class="lg:block hidden "></div>
 
                     <!-- O'ng qism -->
                     <ul class="flex flex-col items-center space-y-5 max-w-full">
