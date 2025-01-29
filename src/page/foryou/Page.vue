@@ -19,7 +19,7 @@ data.value = productData
                 siz
                 uchun</p>
         </div>
-        <ul class="grid lg:grid-cols-3 container sm:grid-cols-2 grid-cols-1 gap-10 mt-20">
+        <ul class="grid lg:grid-cols-3 custom sm:grid-cols-2 grid-cols-1 gap-10 mt-20">
             <li v-for="(data, index) in productData">
                 <div
                     class="relative shadow-[3px_22px_27.6px_-3px_rgba(0,0,0,0.5)] bg-[#F7D8D6] md:w-[325px] rounded-[29.4px] h-[309.48px] mx-auto">
@@ -28,17 +28,19 @@ data.value = productData
                     <!-- Tugmani pastga o'rtaga joylash -->
                     <div
                         class="absolute -bottom-8 left-1/2 text-shadow-custom font-bold -translate-x-1/2 rounded-full w-[69px] h-[69px] bg-white flex items-center justify-center text-[43px]  text-[#A43D3F] shadow-lg leading-none">
-                        {{ data.discription }}
+                        {{ data.number }}
                     </div>
                 </div>
-                <div class="py-5 px-5 text-center">
+                <div class="py-5 px-4 text-center">
                     <h3
-                        class="text-[#A43D3F] text-[63.26px] text-shadow-custom font-bold font-[oswald]  leading-[93.76px] ">
-                        1 <span class="font-bold">kurs</span>
-                        <p class="text-[#ED9FA1] md:text-[117.46px] text-[90px] font-light font-[Freestyle] mt-[-40px]">
-                            siz uchun
-                        </p>
+                        class="text-[#A43D3F] text-[35.26px] mt-[20px] text-shadow-custom font-bold font-[oswald]  leading-[53.76px] ">
+                        {{data.title}}
+
                     </h3>
+                    <p
+                        class="text-[#A43D3F] my-[30px] text-start  text-[17.23px]  font-[gilroy-light] leading-[20.89px]">
+                        {{data.discription}}
+                    </p>
                 </div>
 
             </li>

@@ -33,16 +33,20 @@ watch(select, (newValue) => {
         <SelectContent>
             <SelectGroup class="bg-white cursor-pointer">
                 <SelectLabel>Tanlang</SelectLabel>
-                <SelectItem class="cursor-pointer" value="Standart">
+                <SelectItem class="cursor-pointer hover:bg-[#BC6360] border-b border-gray-300 py-2 px-3"
+                    value="Standart">
                     Standart
                 </SelectItem>
-                <SelectItem class="cursor-pointer" value="Gold">
-                    Gold
-                </SelectItem>
-                <SelectItem class="cursor-pointer" value="Premium">
+                <SelectItem class="cursor-pointer hover:bg-[#BC6360] border-b border-gray-300 py-2 px-3" value="Gold">
                     Premium
+                </SelectItem>
+                <SelectItem class="cursor-pointer py-2 px-3" value="Premium">
+                    Vip
                 </SelectItem>
             </SelectGroup>
         </SelectContent>
     </Select>
 </template>
+
+
+

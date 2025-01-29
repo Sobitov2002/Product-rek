@@ -16,9 +16,9 @@ Data.value = priceData;
 </script>
 <template>
     <div class="prise-img ">
-        <div ref="footer" class="container  py-20  ">
+        <div ref="footer" class="custom  py-20  ">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-20 sm:grid-cols-2 grid-cols-1 relative mt-5">
-                <Card class="shadow-2xl  bg-white backdrop-blur-md rounded-[12.89px]   relative"
+                <Card class="shadow-2xl  bg-white backdrop-blur-md rounded-[12.89px] p-2   relative"
                     v-for="(data, index) in priceData" :key="index">
                     <div class="relative">
                         <div
@@ -35,22 +35,22 @@ Data.value = priceData;
                             Biz bilan kores tili osonroq
                         </p>
                     </CardHeader>
-                    <CardContent class="33px">
+                    <CardContent class="mb-24">
                         <ul>
-                            <li class="mt-[21px] flex items-center gap-4" v-for="(item, idx) in data.subtitle"
+                            <li class="mt-[10px] flex items-center " v-for="(item, idx) in data.subtitle"
                                 :key="item.id">
                                 <div class=" flex justify-center">
                                     <span
                                         class=" w-2 h-2 bg-[#6A3230] mt-2.5 mr-2 text-white font-bold rounded-full shrink-0">
                                     </span>
-                                    <div class="text-[#6A3230] font-[gilroy] leading-[22.81px] text-[18.62px]">{{item.title}}</div>
+                                    <div class="text-[#6A3230] font-[gilroy] text-[13.62px]">{{item.title}}</div>
                                 </div>
                             </li>
                         </ul>
                     </CardContent>
                     <div class="flex justify-center">
                         <CardDescription
-                            class="font-[oswald] text-[38.11px] leading-[56.48px] font-bold  mb-16  text-[#9E5856]">
+                            class="font-[oswald] absolute bottom-0 text-[38.11px] leading-[56.48px] font-bold  mb-16  text-[#9E5856]">
                             {{data.price}} SO'M
                         </CardDescription>
                     </div>

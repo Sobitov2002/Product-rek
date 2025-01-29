@@ -6,7 +6,7 @@ import Banner from '@/page/banner/Page.vue'
 
 </script>
 <template>
-        <main class="min-h-screen  bg-[] ">
+        <main class="min-h-screen   ">
                 <Banner />
                 <Product />
                 <Info />

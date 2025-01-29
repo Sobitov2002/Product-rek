@@ -10,17 +10,17 @@ const footer = ref<HTMLElement | null>(null);
 <template>
     <div class="prise-img md:min-h-[814px] w-full py-10 z-10 relative">
         <div class="absolute bottom-0  left-0 w-full h-full z-[-1]">
-            <img class=" md:block sm:h-[600px] h-[592px] pt-20 sm:p-0 md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
+            <img class=" md:block sm:h-[600px] h-[692px] pt-20 sm:p-0 md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
         <div class="">
             <!-- First section -->
-            <div class="flex md:container w-[90%] m-auto justify-between items-center space-x-4">
+            <div class="flex md:custom w-[90%] m-auto justify-between items-center space-x-4">
                 <div class="bg-white w-[246px]  p-1 md:py-2 rounded-[21.94px]">
                     <h1
                         class="text-[#CB7C7E] text-center font-[oswald] text-[27px] md:text-[40px] font-bold lg:text-[48.12px]   lg:leading-[71.32px]">
-                        5
-                        NOYABR</h1>
+                        1,2,3
+                        Fevral</h1>
                 </div>
                 <div></div>
                 <div class="bg-white w-[246px]  p-1 md:py-2  rounded-[21.94px] ">
@@ -75,7 +75,7 @@ const footer = ref<HTMLElement | null>(null);
                 class="py-[16px] md:block hidden md:w-[443px] w-[330px] h-[105px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2  md:self-start self-end">
                 <p
                     class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
-                    4 oyda Koreys tilini 0 dan oson o‘rganib topik 3 olasiz
+                    3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
                 </p>
             </div>
             <div class=" sm:w-auto">

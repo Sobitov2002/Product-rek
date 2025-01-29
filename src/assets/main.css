@@ -9,12 +9,12 @@
 }
 
 .con{
-  width:1100px ;
+  width:1200px ;
   margin: auto;
 }
-.custom- {
-    width: 100%;
-    max-width: 1200px; /* Maksimal kenglik */
+.custom {
+  width: 100%;
+    max-width: 1400px; /* Maksimal kenglik */
     margin-left: auto; /* O'ng va chap tomondan markazlash */
     margin-right: auto;
     padding-left: 15px; /* Ichki bo'shliq */
@@ -38,7 +38,11 @@
   font-family: 'gilroy';
   src: url('./Fonts/gilroy-bold.ttf') format('truetype');
   font-weight: 400;
-  font-style: bold;
+}
+@font-face {
+  font-family: 'gilroy-light';
+  src: url('./Fonts/ofont.ru_Gilroy.ttf') format('truetype');
+  font-weight: 400;
 }
 
 .prise-img {
