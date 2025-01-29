@@ -22,8 +22,8 @@ data.value = productData
         <ul class="grid lg:grid-cols-3 custom sm:grid-cols-2 grid-cols-1 gap-10 mt-20">
             <li v-for="(data, index) in productData">
                 <div
-                    class="relative shadow-[3px_22px_27.6px_-3px_rgba(0,0,0,0.5)] bg-[#F7D8D6] md:w-[325px] rounded-[29.4px] h-[309.48px] mx-auto">
-                    <img class="absolute bottom-0 h-[363.06px] left-1/2 -translate-x-1/2 bg-center transform"
+                    class="relative shadow-[3px_22px_27.6px_-3px_rgba(0,0,0,0.5)] bg-[#F7D8D6] md:w-[325px] w-[300px] rounded-[29.4px] h-[309.48px] mx-auto">
+                    <img class="absolute bottom-0 h-[343.06px] left-1/2 -translate-x-1/2 bg-center transform"
                         :src="data.imgUrlTwo" alt="Product">
                     <!-- Tugmani pastga o'rtaga joylash -->
                     <div
@@ -33,7 +33,7 @@ data.value = productData
                 </div>
                 <div class="py-5 px-4 text-center">
                     <h3
-                        class="text-[#A43D3F] text-[35.26px] mt-[20px] text-shadow-custom font-bold font-[oswald]  leading-[53.76px] ">
+                        class="text-[#A43D3F] text-[35.26px] mt-[20px] text-shadow-custom font-bold font-[oswald]  md:leading-[53.76px] leading-10 ">
                         {{data.title}}
 
                     </h3>
