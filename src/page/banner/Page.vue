@@ -85,7 +85,6 @@ const footer = ref<HTMLElement | null>(null);
                 </p>
             </div>
 
-            <!-- The second div with text -->
             <div
                 class="py-[16px] md:w-[443px] w-[330px] md:h-[105px] px-[23px] bg-[#A43D3F] rounded-tl-[75px] md:self-start self-end">
                 <p

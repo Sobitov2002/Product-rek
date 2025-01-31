@@ -21,7 +21,7 @@ import { detailData , detailDataTwo } from './store/index';
             <div class="relative custom mx-auto min-h-[500px]">
                 <!-- Rasm -->
                 <img class="absolute bottom-0 lg:block hidden left-1/2 transform -translate-x-1/2 
-                max-w-[535.83px] w-full h-auto object-cover z-[10]"
+                max-w-[535.83px] w-full h-auto  object-cover z-[10]"
                     src="https://ik.imagekit.io/vtroph5l9/Product/3%201.svg?updatedAt=1737146763307" alt="" />
 
                 <div class="relative grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 h-full gap-5 mt-[00px]">

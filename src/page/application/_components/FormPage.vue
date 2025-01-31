@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref, defineEmits, watchEffect } from 'vue';
+import { ref, defineEmits } from 'vue';
 import axios from 'axios';
 import Button from '../_ui/Button.vue';
-import Select from '../_ui/Select.vue'
-import { Circle } from 'lucide-vue-next';
+import Select from '../_ui/Select.vue';
+
 const emit = defineEmits(['updateDialogOpen']);
 
 const formData = ref({
@@ -15,18 +15,39 @@ const formData = ref({
 const isSuccess = ref(false);
 const dialogOpen = ref(false);
 const isLoading = ref(false);
-
-const externalValue = ref(''); // Add this line to define externalValue
+const externalValue = ref('');
+const step = ref(1);
+const selectedPayment = ref('');
+const isAgreed = ref(false); // Oferta tasdiqlash
 
 const handleSelectChange = (value: string) => {
-    externalValue.value = value; // Update externalValue when selection changes
+    externalValue.value = value;
+};
+
+const nextStep = () => {
+    if (!formData.value.firstName || !formData.value.lastName || !formData.value.phoneNumber || !externalValue.value) {
+        alert("Barcha maydonlarni to'ldiring va ta'rif tanlang!");
+        return;
+    }
+    step.value = 2;
+};
+
+const selectPayment = (payment: string) => {
+    selectedPayment.value = payment;
+};
+
+const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text)
+        .then(() => alert("Nusxalandi!"))
+        .catch(err => console.error("Nusxalashda xatolik:", err));
 };
 
 const submit = async () => {
-    if (externalValue.value === '') {
-        alert("Ta'rifni tanlang");
+    if (!isAgreed.value) {
+        alert("Iltimos, ofertani tasdiqlang!");
         return;
     }
+
     isLoading.value = true;
 
     const text = {
@@ -37,7 +58,6 @@ const submit = async () => {
         variant: externalValue.value,
         time: new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric' }).format(new Date())
     };
-    console.log(text);
 
     try {
         const response = await axios.post(`https://dina-backend-newgit.fly.dev/order`, text, {
@@ -45,17 +65,15 @@ const submit = async () => {
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUwNDU4Mn0.-pCxMz2H3wTbI9HsDFS3nyeSC7PaDo60WyZvX5yfIkI"
             }
         });
-        console.log(response);
 
+        console.log(response);
         isSuccess.value = true;
         dialogOpen.value = false;
         emit('updateDialogOpen', dialogOpen.value);
-
         formData.value = { firstName: '', lastName: '', phoneNumber: '' };
     } catch (error) {
         console.error('Xatolik:', error);
-        isSuccess.value = false;
-        alert('Xatolik yuz berdi. Iltimos, qayta urinib ko\'ring.'); // Add user feedback for errors
+        alert("Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.");
     } finally {
         isLoading.value = false;
     }
@@ -64,36 +82,63 @@ const submit = async () => {
 
 <template>
     <form @submit.prevent="submit" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
-        <h1 class="text-[#A43D3F] text-[30px]  font-[oswald] text-center">
+        <h1 class="text-[#A43D3F] text-[30px] font-[oswald] text-center">
             Joyingizni band qilish uchun ma'lumotlaringizni yuboring!
         </h1>
-        <div>
+
+        <div v-if="step === 1">
             <label class="block mb-2" for="firstName">Ismingizni kiriting</label>
-            <input required v-model="formData.firstName" id="fullName" type="text"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            <input required v-model="formData.firstName" type="text" class="w-full px-4 py-2 border rounded-md"
                 placeholder="Ism" />
-        </div>
-        <div>
-            <label class="block mb-2" for="lastName">Familyangizni kiriting</label>
-            <input required v-model="formData.lastName" id="fullName" type="text"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+
+            <label class="block mb-2 mt-3" for="lastName">Familyangizni kiriting</label>
+            <input required v-model="formData.lastName" type="text" class="w-full px-4 py-2 border rounded-md"
                 placeholder="Familya" />
-        </div>
-        <div class="mt-3">
-            <label class="block text-gray-700 mb-2" for="phoneNumber">Telefon raqamingiz</label>
+
+            <label class="block mb-2 mt-3" for="phoneNumber">Telefon raqamingiz</label>
             <div class="relative w-full">
                 <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">+998</span>
-                <input required v-model="formData.phoneNumber" id="phoneNumber" type="number"
-                    class="w-full pl-12 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="XX XXX XX XX" />
+                <input required v-model="formData.phoneNumber" type="number"
+                    class="w-full pl-12 pr-4 py-2 border rounded-md" placeholder="XX XXX XX XX" />
+            </div>
+
+            <label class="block mt-3" for="select">O'zingizga mos ta'rifni tanlang!</label>
+            <Select @update-select="handleSelectChange" />
+
+            <div class="mt-4 flex justify-between">
+                <Button @click.prevent="nextStep">Keyingi</Button>
             </div>
         </div>
-        <label class="block mt-3 text-gray-700 mb-2" for="select">O'zingizga mos ta'rifni tanlang !</label>
-        <Select @update-select="handleSelectChange" />
-        <div class="mt-4">
-            <Button :isLoading="isLoading">Saqlash</Button>
+
+        <div v-if="step === 2">
+            <h2 class="text-center text-lg font-bold mb-3">To'lov usulini tanlang</h2>
+            <div class="flex justify-center space-x-5">
+                <img src="https://ik.imagekit.io/vtroph5l9/Product/download.png?updatedAt=1738334821922"
+                    @click="selectPayment('payme')" class="cursor-pointer w-20" />
+                <img src="https://ik.imagekit.io/vtroph5l9/Product/download%20(1).png?updatedAt=1738334822725"
+                    @click="selectPayment('payme')" class="cursor-pointer w-20" />
+            </div>
+
+            <div v-if="selectedPayment" class="mt-3 p-4 border rounded text-center bg-gray-100">
+                <p class="mb-2">To'lov uchun karta raqami:</p>
+                <p class="font-bold text-lg">{{ selectedPayment === 'click' ? '5614 6812 5482 2814' : '5614 6812 5482 2814' }}</p>
+                <button
+                    @click.prevent="copyToClipboard(selectedPayment === 'click' ? '5614681254822814' : '5614681254822814')"
+                    class="mt-2 bg-blue-500 text-white py-1 px-4 rounded">
+                    Nusxalash
+                </button>
+            </div>
+
+            <!-- Oferta Tasdiqlash -->
+            <div class="mt-4 flex items-center">
+                <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
+                <label for="offer" class="cursor-pointer">Men ofertaga roziman </label>
+            </div>
+
+            <!-- "Saqlash" tugmasi faqat ofertaga rozilik bildirganda chiqadi -->
+            <div class="mt-4">
+                <Button v-if="isAgreed" :isLoading="isLoading">Saqlash</Button>
+            </div>
         </div>
     </form>
 </template>
-
-<style scoped></style>
