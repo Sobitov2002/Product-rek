@@ -74,37 +74,41 @@ const footer = ref<HTMLElement | null>(null);
         </div>
 
         <!-- Next section -->
-        <div
-            class="py-[16px] md:block z-40 md:w-[443px] w-[80%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2 md:self-start self-end md:order-1 order-2 md:text-left text-left">
-            <p
-                class="md:text-[18.53px]  lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
-                3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
-            </p>
+        <div class="md:flex justify-between">
+            <div
+                class="py-[16px] md:block z-40 md:w-[443px] md:rounded-br-[0px] w-[80%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2 md:self-start self-end md:order-1 order-2 md:text-left text-left">
+                <p
+                    class="md:text-[18.53px]  lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
+                    3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
+                </p>
+            </div>
+
+            <div
+                class="sm:w-auto z-20 md:order-2 absolute md:relative bottom-2 order-3 w-full flex justify-center items-center">
+                <p
+                    class="text-[#272727] z-20 rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy] flex items-center gap-2">
+                    Batafsil
+                    <svg class="w-6 h-6 animate-bounce" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" />
+                        <path d="M5 12L12 19L19 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </p>
+            </div>
+
+
+
+            <div
+                class="py-[16px] z-50 md:w-[443px] mb-10 w-[80%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] md:rounded-tl-[75px] md:rounded-tr-[0px] md:rounded-br-[0px] rounded-br-[75px] md:self-start self-start md:order-3 order-1 md:text-right text-left">
+                <p
+                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] md:leading-[30.16px] text-white">
+                    Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
+                </p>
+            </div>
         </div>
 
-        <div class="sm:w-auto z-20 md:order-2 absolute bottom-2 order-3 w-full flex justify-center items-center">
-            <p
-                class="text-[#272727] z-20 rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy] flex items-center gap-2">
-                Batafsil
-                <svg class="w-6 h-6 animate-bounce" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" />
-                    <path d="M5 12L12 19L19 12" stroke="black" stroke-width="2" stroke-linecap="round" />
-                </svg>
-            </p>
-        </div>
 
 
-
-        <div
-            class="py-[16px] z-50 md:w-[443px] mb-10 w-[80%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] rounded-br-[75px] md:self-start self-end md:order-3 order-1 md:text-right text-left">
-            <p
-                class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] md:leading-[30.16px] text-white">
-                Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
-            </p>
-        </div>
     </div>
-
-
-
 
 </template>
