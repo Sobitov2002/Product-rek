@@ -3,7 +3,7 @@ export const productData = [
         imgUrlTwo:'https://ik.imagekit.io/vtroph5l9/Product/Layer%2011%201.png?updatedAt=1737192259582',
         number:"1",
         title:"Koreyada ishlash yoki o'qish istagida bo'lsangiz:",
-        discription:"Onlayn kursimizda darslarni istalgan joyda va vaqtda o'rganishingiz mumkin. Bu sizga turmush tarzingizni o’zgartirmashdan yangi  til o'rganish imkoniyatini yaratadi."
+        discription:"Onlayn kursimizda darslarni istalgan joyda va vaqtda o'rganishingiz mumkin. Bu sizga turmush tarzingizni o’zgartirmasdan yangi  til o'rganish imkoniyatini yaratadi."
 
     },
      {
