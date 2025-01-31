@@ -50,23 +50,24 @@ const submit = async () => {
 
     isLoading.value = true;
 
-    const text = {
-        firstName: formData.value.firstName,
-        lastName: formData.value.lastName,
-        phone: `+998${formData.value.phoneNumber}`,
-        type: 'video',
-        variant: externalValue.value,
-        time: new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric' }).format(new Date())
-    };
+    const text = `*Ism:* ${formData.value.firstName}
+*Familya:* ${formData.value.lastName}
+*Telefon:* +998${formData.value.phoneNumber}
+*Ta'rif:* ${externalValue.value}
+*Vaqt:* ${new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric' }).format(new Date())}`;
 
     try {
-        const response = await axios.post(`https://dina-backend-newgit.fly.dev/order`, text, {
-            headers: {
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzAsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNjUwNDU4Mn0.-pCxMz2H3wTbI9HsDFS3nyeSC7PaDo60WyZvX5yfIkI"
-            }
+        const token = '7749260469:AAEgInZHdGNda-9FviCu_8E9C7fSrgmQKnc';
+        const chatId = '-1002370103265';
+
+        // Telegramga ma'lumot yuborish
+        const response = await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
+            chat_id: chatId,
+            text: text,
+            parse_mode: "Markdown",
         });
 
-        console.log(response);
+        console.log(response.data);
         isSuccess.value = true;
         dialogOpen.value = false;
         emit('updateDialogOpen', dialogOpen.value);
@@ -121,9 +122,8 @@ const submit = async () => {
 
             <div v-if="selectedPayment" class="mt-3 p-4 border rounded text-center bg-gray-100">
                 <p class="mb-2">To'lov uchun karta raqami:</p>
-                <p class="font-bold text-lg">{{ selectedPayment === 'click' ? '5614 6812 5482 2814' : '5614 6812 5482 2814' }}</p>
-                <button
-                    @click.prevent="copyToClipboard(selectedPayment === 'click' ? '5614681254822814' : '5614681254822814')"
+                <p class="font-bold text-lg">5614 6812 5482 2814</p>
+                <button @click.prevent="copyToClipboard('5614681254822814')"
                     class="mt-2 bg-blue-500 text-white py-1 px-4 rounded">
                     Nusxalash
                 </button>
@@ -132,7 +132,7 @@ const submit = async () => {
             <!-- Oferta Tasdiqlash -->
             <div class="mt-4 flex items-center">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
-                <label for="offer" class="cursor-pointer">Men ofertaga roziman </label>
+                <label for="offer" class="cursor-pointer">Men ofertaga roziman</label>
             </div>
 
             <!-- "Saqlash" tugmasi faqat ofertaga rozilik bildirganda chiqadi -->

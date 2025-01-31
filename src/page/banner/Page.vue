@@ -9,8 +9,8 @@ const footer = ref<HTMLElement | null>(null);
 
 <template>
     <div class="prise-img md:min-h-[814px] w-full py-10 z-10 relative">
-        <div class="absolute bottom-0  left-0 w-full h-full z-[-1]">
-            <img class=" md:block sm:h-[600px] h-[692px] pt-20 sm:p-0 md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute md:left-1/2    transform -translate-x-1/2"
+        <div class="absolute bottom-0  left-0 w-full h-full  -z-10">
+            <img class=" md:block sm:h-[600px] h-[692px]  pt-20 sm:p-0 md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute left-1/2    transform -translate-x-1/2"
                 src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
         </div>
         <div class="">
@@ -31,10 +31,10 @@ const footer = ref<HTMLElement | null>(null);
                 </div>
             </div>
             <!-- Next section -->
-            <div class="lg:mt-[80px] mt-[30px]">
+            <div class="lg:mt-[80px] mt-[30px] -z-20">
                 <div class="grid md:grid-cols-2 w-[90%]  sm:container m-auto grid-cols-1 relative  top-14 ">
                     <h1
-                        class="text-white font-[Freestyle] lg:text-[55px] md:text-[50px] text-[39px] md:block  md:text-start text-end ">
+                        class="text-white font-[Freestyle] -z-20 lg:text-[55px] md:text-[50px] text-[40.49px] md:block  md:text-start text-center ">
                         Topik
                         yuqori ball olish va Koreya </h1>
 
@@ -44,20 +44,25 @@ const footer = ref<HTMLElement | null>(null);
                         olish
                         va Koreya</h1>
                 </div>
-                <div class="md:container w-[90%] m-auto  mt-5">
+                <div class="md:container w-[90%]  m-auto  mt-5">
 
                     <!-- Next section -->
                     <div class="md:flex  md:justify-between p-0 justify-end ">
-                        <h1 class="text-[#A43D3F]  font-[oswald] text-[60px]  font-bold  md:text-[90.27px] text-end  ">
-                            MADINA</h1>
+                        <h1
+                            class="text-[#A43D3F] font-[oswald] text-[60px] font-bold md:text-[90.27px] text-center relative -z-10">
+                            MADINA
+                        </h1>
+
                         <div></div>
-                        <h1 class="text-[#A43D3F]  font-[oswald] text-[60px]  font-bold  md:text-[90.27px] text-end">
+                        <h1
+                            class="text-[#A43D3F]  hidden md:block font-[oswald] text-[60px]  font-bold  md:text-[90.27px] text-end">
                             MADINA</h1>
                     </div>
                     <!-- Next section -->
 
-                    <div class="flex relative md:justify-between  justify-end bottom-10">
-                        <h1 class="text-[#A43D3F]  font-[oswald] font-bold md:text-[90.27px] text-end  text-[60px]">
+                    <div class="flex relative md:justify-between  justify-center bottom-10 ">
+                        <h1
+                            class="text-[#A43D3F]  font-[oswald] -z-20 font-bold md:text-[90.27px] text-start  text-[60px]">
                             QODIROVA</h1>
                         <div></div>
                         <h1
@@ -70,32 +75,31 @@ const footer = ref<HTMLElement | null>(null);
         </div>
 
         <!-- Next section -->
-        <div class="flex w-full md:justify-between justify-end flex-wrap md:flex-nowrap gap-4">
-            <div
-                class="py-[16px] md:block hidden md:w-[443px] w-[330px] h-[105px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2  md:self-start self-end">
-                <p
-                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
-                    3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
-                </p>
-            </div>
-            <div class=" sm:w-auto">
-                <p
-                    class="text-[#272727] rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy]">
-                    Batafsil
-                </p>
-            </div>
-
-            <div
-                class="py-[16px] md:w-[443px] w-[330px] md:h-[105px] px-[23px] bg-[#A43D3F] rounded-tl-[75px] md:self-start self-end">
-                <p
-                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] text-end font-[gilroy] md:leading-[30.16px] text-white">
-                    Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
-                </p>
-            </div>
+        <div
+            class="py-[16px] md:block z-40 md:w-[443px] w-[80%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2 md:self-start self-end md:order-1 order-2 md:text-left text-left">
+            <p
+                class="md:text-[18.53px]  lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
+                3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
+            </p>
         </div>
 
+        <div class="sm:w-auto z-20 md:order-2 absolute bottom-4 order-3 w-full flex justify-center">
+            <p
+                class="text-[#272727] z-20 rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy]">
+                Batafsil
+            </p>
+        </div>
 
-
+        <div
+            class="py-[16px] z-50 md:w-[443px] w-[80%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] rounded-br-[75px] md:self-start self-end md:order-3 order-1 md:text-right text-left">
+            <p
+                class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] md:leading-[30.16px] text-white">
+                Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
+            </p>
+        </div>
     </div>
+
+
+
 
 </template>
