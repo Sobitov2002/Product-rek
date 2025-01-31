@@ -35,12 +35,10 @@ const footer = ref<HTMLElement | null>(null);
                 <div class="grid md:grid-cols-2 w-[90%]  sm:container m-auto grid-cols-1 relative  top-14 ">
                     <h1
                         class="text-white font-[Freestyle] -z-20 lg:text-[55px] md:text-[50px] text-[40.49px] md:block  md:text-start text-center ">
-                        Topik
-                        yuqori ball olish va Koreya </h1>
+                        Topik yuqori ball olish va Koreya </h1>
 
                     <h1 class="text-white  font-[Freestyle] text-[55px] md:text-[50px] md:block hidden text-end ">
-                        Topik
-                        yuqori ball
+                        Topik yuqori ball
                         olish
                         va Koreya</h1>
                 </div>
@@ -49,7 +47,7 @@ const footer = ref<HTMLElement | null>(null);
                     <!-- Next section -->
                     <div class="md:flex  md:justify-between p-0 justify-end ">
                         <h1
-                            class="text-[#A43D3F] font-[oswald] text-[60px] font-bold md:text-[90.27px] text-center relative -z-10">
+                            class="text-[#A43D3F] font-[oswald] text-[60px] font-bold md:text-[90.27px] text-center relative -z-20">
                             MADINA
                         </h1>
 
@@ -61,6 +59,7 @@ const footer = ref<HTMLElement | null>(null);
                     <!-- Next section -->
 
                     <div class="flex relative md:justify-between  justify-center bottom-10 ">
+
                         <h1
                             class="text-[#A43D3F]  font-[oswald] -z-20 font-bold md:text-[90.27px] text-start  text-[60px]">
                             QODIROVA</h1>
@@ -83,15 +82,21 @@ const footer = ref<HTMLElement | null>(null);
             </p>
         </div>
 
-        <div class="sm:w-auto z-20 md:order-2 absolute bottom-4 order-3 w-full flex justify-center">
+        <div class="sm:w-auto z-20 md:order-2 absolute bottom-2 order-3 w-full flex justify-center items-center">
             <p
-                class="text-[#272727] z-20 rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy]">
+                class="text-[#272727] z-20 rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy] flex items-center gap-2">
                 Batafsil
+                <svg class="w-6 h-6 animate-bounce" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M5 12L12 19L19 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
             </p>
         </div>
 
+
+
         <div
-            class="py-[16px] z-50 md:w-[443px] w-[80%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] rounded-br-[75px] md:self-start self-end md:order-3 order-1 md:text-right text-left">
+            class="py-[16px] z-50 md:w-[443px] mb-10 w-[80%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] rounded-br-[75px] md:self-start self-end md:order-3 order-1 md:text-right text-left">
             <p
                 class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] md:leading-[30.16px] text-white">
                 Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
