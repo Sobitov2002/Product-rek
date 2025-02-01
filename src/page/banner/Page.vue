@@ -37,7 +37,7 @@ const footer = ref<HTMLElement | null>(null);
                         class="text-white font-[Freestyle] -z-20 lg:text-[55px] md:text-[50px] text-[40.49px] md:block  md:text-start text-center ">
                         Topik yuqori ball olish va Koreya </h1>
 
-                    <h1 class="text-white  font-[Freestyle] text-[55px] md:text-[50px] md:block hidden text-end ">
+                    <h1 class="text-white  font-[Freestyle] text-[55px] md:text-[55px] md:block hidden text-end ">
                         Topik yuqori ball
                         olish
                         va Koreya</h1>

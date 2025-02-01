@@ -133,6 +133,10 @@ const submit = async () => {
             <div class="mt-4 flex items-center">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
                 <label for="offer" class="cursor-pointer">Men ofertaga roziman</label>
+                <a href="https://drive.google.com/uc?export=download&id=15smCcAL_8QnEVTKwlM3l6FM214vnhiV3" download
+                    target="" style="margin-left: 10px; color: blue; text-decoration: underline;">
+                    Oferta shartlari
+                </a>
             </div>
 
             <!-- "Saqlash" tugmasi faqat ofertaga rozilik bildirganda chiqadi -->
