@@ -25,7 +25,7 @@ const handleSelectChange = (value: string) => {
 };
 
 const nextStep = () => {
-    if (!formData.value.firstName || !formData.value.lastName || !formData.value.phoneNumber || !externalValue.value) {
+    if (!formData.value.firstName ||  !formData.value.phoneNumber || !externalValue.value) {
         alert("Barcha maydonlarni to'ldiring va ta'rif tanlang!");
         return;
     }
@@ -50,8 +50,7 @@ const submit = async () => {
 
     isLoading.value = true;
 
-    const text = `*Ism:* ${formData.value.firstName}
-*Familya:* ${formData.value.lastName}
+    const text = `*Ism Familya:* ${formData.value.firstName}
 *Telefon:* +998${formData.value.phoneNumber}
 *Ta'rif:* ${externalValue.value}
 *Vaqt:* ${new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric' }).format(new Date())}`;
@@ -88,21 +87,15 @@ const submit = async () => {
         </h1>
 
         <div v-if="step === 1">
-            <label class="block mb-2" for="firstName">Ismingizni kiriting</label>
+            <label class="block mb-2" for="firstName">Ism Familya kiriting</label>
             <input required v-model="formData.firstName" type="text" class="w-full px-4 py-2 border rounded-md"
-                placeholder="Ism" />
-
-            <label class="block mb-2 mt-3" for="lastName">Familyangizni kiriting</label>
-            <input required v-model="formData.lastName" type="text" class="w-full px-4 py-2 border rounded-md"
-                placeholder="Familya" />
-
+                placeholder="Ism Familya" />
             <label class="block mb-2 mt-3" for="phoneNumber">Telefon raqamingiz</label>
             <div class="relative w-full">
                 <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">+998</span>
                 <input required v-model="formData.phoneNumber" type="number"
-                    class="w-full pl-12 pr-4 py-2 border rounded-md" placeholder="XX XXX XX XX" />
+                    class="w-full pl-12 pr-4 py-2 border rounded-md" placeholder=" XX XXX XX XX" />
             </div>
-
             <label class="block mt-3" for="select">O'zingizga mos ta'rifni tanlang!</label>
             <Select @update-select="handleSelectChange" />
 
@@ -112,15 +105,15 @@ const submit = async () => {
         </div>
 
         <div v-if="step === 2">
-            <h2 class="text-center text-lg font-bold mb-3">To'lov usulini tanlang</h2>
-            <div class="flex justify-center space-x-5">
-                <img src="https://ik.imagekit.io/vtroph5l9/Product/download.png?updatedAt=1738334821922"
-                    @click="selectPayment('payme')" class="cursor-pointer w-20" />
-                <img src="https://ik.imagekit.io/vtroph5l9/Product/download%20(1).png?updatedAt=1738334822725"
-                    @click="selectPayment('payme')" class="cursor-pointer w-20" />
+            <h2 class="text-center text-lg font-bold mb-1">To'lov usulini tanlang</h2>
+            <div class="flex justify-center items-center space-x-5">
+                <img src="https://ik.imagekit.io/vtroph5l9/Product/payme_01.png?updatedAt=1738406652024"
+                    @click="selectPayment('payme')" class="cursor-pointer w-[180px] h-18" />
+                <img src="https://ik.imagekit.io/vtroph5l9/Product/Click-01_0xvqWH8.png?updatedAt=1738406652186"
+                    @click="selectPayment('payme')" class="cursor-pointer w-[200px] h-full" />
             </div>
 
-            <div v-if="selectedPayment" class="mt-3 p-4 border rounded text-center bg-gray-100">
+            <div v-if="selectedPayment" class="mt-1 p-4 border rounded text-center bg-gray-100">
                 <p class="mb-2">To'lov uchun karta raqami:</p>
                 <p class="font-bold text-lg">5614 6812 5482 2814</p>
                 <button @click.prevent="copyToClipboard('5614681254822814')"
@@ -133,8 +126,8 @@ const submit = async () => {
             <div class="mt-4 flex items-center">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
                 <label for="offer" class="cursor-pointer">Men ofertaga roziman</label>
-                <a href="https://drive.google.com/uc?export=download&id=15smCcAL_8QnEVTKwlM3l6FM214vnhiV3" download
-                    target="" style="margin-left: 10px; color: blue; text-decoration: underline;">
+                <a href="../../../assets/Shartnoma.pdf" download="Shartnoma.pdf"
+                    style="margin-left: 10px; color: blue; text-decoration: underline;">
                     Oferta shartlari
                 </a>
             </div>

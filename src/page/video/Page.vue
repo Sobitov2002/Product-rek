@@ -17,7 +17,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
             O'quvchilarni kurs haqidagi fikri !
         </p>
 
-        <div class="container grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="container grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Card v-for="video in videoData" 
                 class="overflow-hidden border-none flex flex-col items-center">
                 <CardContent class="w-full p-0">

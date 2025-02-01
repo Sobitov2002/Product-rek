@@ -15,20 +15,14 @@ const footer = ref<HTMLElement | null>(null);
         </div>
         <div class="">
             <!-- First section -->
-            <div class="flex md:custom w-[90%] m-auto justify-between items-center space-x-4">
+            <div class="flex md:custom w-[90%] m-auto justify-center items-center space-x-4">
                 <div class="bg-white w-[246px]  p-1 md:py-2 rounded-[21.94px]">
                     <h1
                         class="text-[#CB7C7E] text-center font-[oswald] text-[27px] md:text-[40px] font-bold lg:text-[48.12px]   lg:leading-[71.32px]">
                         1,2,3
                         Fevral</h1>
                 </div>
-                <div></div>
-                <div class="bg-white w-[246px]  p-1 md:py-2  rounded-[21.94px] ">
-                    <h1
-                        class="text-[#CB7C7E] text-center font-[oswald] text-[27px] md:text-[40px] font-bold lg:text-[48.12px]   lg:leading-[71.32px]">
-                        6
-                        QOLDI</h1>
-                </div>
+               
             </div>
             <!-- Next section -->
             <div class="lg:mt-[80px] mt-[30px] -z-20">
@@ -76,9 +70,9 @@ const footer = ref<HTMLElement | null>(null);
         <!-- Next section -->
         <div class="md:flex justify-between">
             <div
-                class="py-[16px] md:block z-40 md:w-[443px] md:rounded-br-[0px] w-[80%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2 md:self-start self-end md:order-1 order-2 md:text-left text-left">
+                class="py-[16px] md:block z-40 md:w-[443px] md:rounded-br-[0px] w-[85%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2 md:self-start self-end md:order-1 order-2 md:text-left text-left">
                 <p
-                    class="md:text-[18.53px]  lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] leading-[38.16px] text-white">
+                    class="md:text-[18.53px]  lg:text-[25px] sm:text-[20px] text-[20px] font-[gilroy] md:leading-[38.16px]  text-white">
                     3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
                 </p>
             </div>
@@ -99,9 +93,9 @@ const footer = ref<HTMLElement | null>(null);
 
 
             <div
-                class="py-[16px] z-50 md:w-[443px] mb-10 w-[80%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] md:rounded-tl-[75px] md:rounded-tr-[0px] md:rounded-br-[0px] rounded-br-[75px] md:self-start self-start md:order-3 order-1 md:text-right text-left">
+                class="py-[16px] z-50 md:w-[443px] mb-10 w-[85%] md:h-[105px] px-[23px] mt-4 bg-[#A43D3F] rounded-tr-[75px] md:rounded-tl-[75px] md:rounded-tr-[0px] md:rounded-br-[0px] rounded-br-[75px] md:self-start self-start md:order-3 order-1 md:text-right text-left">
                 <p
-                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] font-[gilroy] md:leading-[30.16px] text-white">
+                    class="md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[20px] font-[gilroy] md:leading-[30.16px] text-white">
                     Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
                 </p>
             </div>
