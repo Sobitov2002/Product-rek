@@ -82,7 +82,7 @@ const submit = async () => {
 
 <template>
     <form @submit.prevent="submit" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
-        <h1 class="text-[#A43D3F] text-[30px] font-[oswald] text-center">
+        <h1 class="text-[#A43D3F] text-[30px] font-[oswald] text-center leading-7">
             Joyingizni band qilish uchun ma'lumotlaringizni yuboring!
         </h1>
 
@@ -106,12 +106,22 @@ const submit = async () => {
 
         <div v-if="step === 2">
             <h2 class="text-center text-lg font-bold mb-1">To'lov usulini tanlang</h2>
-            <div class="flex justify-center items-center space-x-5">
-                <img src="https://ik.imagekit.io/vtroph5l9/Product/payme_01.png?updatedAt=1738406652024"
-                    @click="selectPayment('payme')" class="cursor-pointer w-[180px] h-18" />
-                <img src="https://ik.imagekit.io/vtroph5l9/Product/Click-01_0xvqWH8.png?updatedAt=1738406652186"
-                    @click="selectPayment('payme')" class="cursor-pointer w-[200px] h-full" />
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <div class="flex flex-col items-center space-y-4">
+                    <img src="https://ik.imagekit.io/vtroph5l9/Product/payme_01.png?updatedAt=1738406652024"
+                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                    <img src="https://ik.imagekit.io/vtroph5l9/Product/logo.png?updatedAt=1738441132862"
+                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                </div>
+
+                <div class="flex flex-col items-center space-y-4">
+                    <img src="https://ik.imagekit.io/vtroph5l9/Product/uzum.svg?updatedAt=1738440135893"
+                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                    <img src="https://ik.imagekit.io/vtroph5l9/Product/Paynet.png?updatedAt=1738440453171"
+                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                </div>
             </div>
+
 
             <div v-if="selectedPayment" class="mt-1 p-4 border rounded text-center bg-gray-100">
                 <p class="mb-2">To'lov uchun karta raqami:</p>
