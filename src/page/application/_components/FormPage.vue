@@ -143,8 +143,6 @@ const submit = async () => {
                 <Oferta />
             </div>
             <div>
-
-              
             </div>
             <div class="mt-4">
                 <Button v-if="isAgreed" :isLoading="isLoading" @click.prevent="submit">Saqlash</Button>
