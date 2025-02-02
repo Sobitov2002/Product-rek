@@ -1,6 +1,7 @@
 
 export   const priceData = [
     {
+      imageurl:'https://ik.imagekit.io/vtroph5l9/Product/Vector.svg?updatedAt=1738475830584',
       text: 'STANDARD',
       subtitle: [
         { id: '1', title: "Video darslar:" },
@@ -15,6 +16,7 @@ export   const priceData = [
       icon: { class: '../src/assets/icon/Vector.svg', size: 'text-3xl', color: 'text-white' }
     },
     {
+      imageurl:'https://ik.imagekit.io/vtroph5l9/Product/Medal%20First%20Place.svg?updatedAt=1738475830606',
       text: 'PREMIUM',
       subtitle: [
         { id: '1', title: "Platforma" },
@@ -35,6 +37,7 @@ export   const priceData = [
       icon: { class: '../src/assets/icon/Medal First Place.svg',size: 'text-3xl', color: 'text-white'  }
     },
     {
+      imageurl:'https://ik.imagekit.io/vtroph5l9/Product/Guarantee.svg?updatedAt=1738475830505',
       text: 'VIP',
       subtitle: [
         { id: '1', title: "Platforma" },
