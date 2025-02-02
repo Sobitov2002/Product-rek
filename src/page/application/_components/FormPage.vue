@@ -26,7 +26,7 @@ const handleSelectChange = (value: string) => {
 };
 
 const nextStep = () => {
-    if (!formData.value.firstName ||  !formData.value.phoneNumber || !externalValue.value) {
+    if (!formData.value.firstName || !formData.value.phoneNumber || !externalValue.value) {
         alert("Barcha maydonlarni to'ldiring va ta'rif tanlang!");
         return;
     }
@@ -72,6 +72,9 @@ const submit = async () => {
         dialogOpen.value = false;
         emit('updateDialogOpen', dialogOpen.value);
         formData.value = { firstName: '', lastName: '', phoneNumber: '' };
+
+        // Muvaffaqiyatli yuborilgandan so'ng Telegramga yo'naltirish
+        window.open('https://t.me/TopikDi_Manager', '_blank');
     } catch (error) {
         console.error('Xatolik:', error);
         alert("Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.");
@@ -141,13 +144,10 @@ const submit = async () => {
             </div>
             <div>
 
-                <a href="" class="flex"> <img class="h-7 w-7"
-                        src="https://ik.imagekit.io/vtroph5l9/Product/telegram.png?updatedAt=1738485901587" alt="">
-                        Telegram</a>
-
+              
             </div>
             <div class="mt-4">
-                <Button v-if="isAgreed" :isLoading="isLoading">Saqlash</Button>
+                <Button v-if="isAgreed" :isLoading="isLoading" @click.prevent="submit">Saqlash</Button>
             </div>
         </div>
     </form>
