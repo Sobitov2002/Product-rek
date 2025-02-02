@@ -140,9 +140,12 @@ const submit = async () => {
             <div class="mt-4 flex items-center">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
                 <label for="offer" class="cursor-pointer mr-2">Men ofertaga roziman</label>
+
                 <Oferta />
             </div>
-            <div>
+            <div >
+                <a class="flex" href="https://t.me/TopikDi_Manager"> Telegram<img class="w-7 h-7"
+                        src="https://ik.imagekit.io/vtroph5l9/Product/telegram.png?updatedAt=1738485901587" alt=""></a>
             </div>
             <div class="mt-4">
                 <Button v-if="isAgreed" :isLoading="isLoading" @click.prevent="submit">Saqlash</Button>
