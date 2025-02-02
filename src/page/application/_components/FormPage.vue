@@ -3,6 +3,7 @@ import { ref, defineEmits } from 'vue';
 import axios from 'axios';
 import Button from '../_ui/Button.vue';
 import Select from '../_ui/Select.vue';
+import Oferta from './Oferta.vue';
 
 const emit = defineEmits(['updateDialogOpen']);
 
@@ -86,17 +87,17 @@ const submit = async () => {
             Joyingizni band qilish uchun ma'lumotlaringizni yuboring!
         </h1>
 
-        <div v-if="step === 1">
+        <div class="mt-2" v-if="step === 1">
             <label class="block mb-2" for="firstName">Ism Familya kiriting</label>
             <input required v-model="formData.firstName" type="text" class="w-full px-4 py-2 border rounded-md"
                 placeholder="Ism Familya" />
             <label class="block mb-2 mt-3" for="phoneNumber">Telefon raqamingiz</label>
             <div class="relative w-full">
-                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">+998</span>
+                <span class="absolute left-3  top-1/2 transform -translate-y-1/2 text-gray-500">+998</span>
                 <input required v-model="formData.phoneNumber" type="number"
-                    class="w-full pl-12 pr-4 py-2 border rounded-md" placeholder=" XX XXX XX XX" />
+                    class="w-full pl-14 pr-4 py-2 border rounded-md" placeholder=" XX XXX XX XX" />
             </div>
-            <label class="block mt-3" for="select">O'zingizga mos ta'rifni tanlang!</label>
+            <label class="block mt-3 mb-2" for="select">O'zingizga mos ta'rifni tanlang!</label>
             <Select @update-select="handleSelectChange" />
 
             <div class="mt-4 flex justify-between">
@@ -109,16 +110,16 @@ const submit = async () => {
             <div class="flex flex-wrap justify-center gap-5 md:gap-10">
                 <div class="flex flex-col items-center space-y-4">
                     <img src="https://ik.imagekit.io/vtroph5l9/Product/payme_01.png?updatedAt=1738406652024"
-                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                        @click="selectPayment('payme')" class="cursor-pointer w-28 h-20 object-contain" />
                     <img src="https://ik.imagekit.io/vtroph5l9/Product/logo.png?updatedAt=1738441132862"
-                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                        @click="selectPayment('payme')" class="cursor-pointer w-28 h-20 object-contain" />
                 </div>
 
                 <div class="flex flex-col items-center space-y-4">
                     <img src="https://ik.imagekit.io/vtroph5l9/Product/uzum.svg?updatedAt=1738440135893"
-                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                        @click="selectPayment('payme')" class="cursor-pointer w-28 h-20 object-contain" />
                     <img src="https://ik.imagekit.io/vtroph5l9/Product/Paynet.png?updatedAt=1738440453171"
-                        @click="selectPayment('payme')" class="cursor-pointer w-32 h-20 object-contain" />
+                        @click="selectPayment('payme')" class="cursor-pointer w-28 h-20 object-contain" />
                 </div>
             </div>
 
@@ -135,11 +136,8 @@ const submit = async () => {
             <!-- Oferta Tasdiqlash -->
             <div class="mt-4 flex items-center">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
-                <label for="offer" class="cursor-pointer">Men ofertaga roziman</label>
-                <a href="../../../assets/Shartnoma.pdf" download="Shartnoma.pdf"
-                    style="margin-left: 10px; color: blue; text-decoration: underline;">
-                    Oferta shartlari
-                </a>
+                <label for="offer" class="cursor-pointer mr-2">Men ofertaga roziman</label>
+                <Oferta  />
             </div>
 
             <!-- "Saqlash" tugmasi faqat ofertaga rozilik bildirganda chiqadi -->

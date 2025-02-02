@@ -70,7 +70,7 @@ const footer = ref<HTMLElement | null>(null);
         <!-- Next section -->
         <div class="md:flex justify-between">
             <div
-                class="py-[16px] md:block z-40 md:w-[443px] md:rounded-br-[0px] w-[85%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[23px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-2 md:self-start self-end md:order-1 order-2 md:text-left text-left">
+                class="pt-[20px] md:block z-40 md:w-[443px] md:rounded-br-[0px] w-[85%] h-[105px] rounded-tr-[75px] rounded-br-[75px] px-[15px] bg-[#A43D3F] md:rounded-tr-[75px] md:mt-0 mt-3 md:self-start self-end md:order-1 order-2 md:text-left text-left">
                 <p
                     class="md:text-[18.53px]  lg:text-[22px] sm:text-[20px] text-[20px] font-[gilroy] md:leading-[38.16px]  text-white">
                     3 oyda Koreys tilini 0 dan oson o‘rganib TOPIK 2 olasiz
@@ -93,7 +93,7 @@ const footer = ref<HTMLElement | null>(null);
 
 
             <div
-                class="py-[12px] z-50 md:w-[443px] mb-10 w-[85%] mt-4 md:h-[105px] px-[23px] bg-[#A43D3F] rounded-tr-[75px] md:rounded-tl-[75px] md:rounded-tr-[0px] md:rounded-br-[0px] rounded-br-[75px] md:self-start self-start md:order-3 order-1 md:text-right text-left">
+                class="py-[12px] z-50 md:w-[443px] mb-10 w-[85%] mt-4 md:h-[105px] px-[15px] bg-[#A43D3F] rounded-tr-[75px] md:rounded-tl-[75px] md:rounded-tr-[0px] md:rounded-br-[0px] rounded-br-[75px] md:self-start self-start md:order-3 order-1 md:text-right text-left">
                 <p
                     class="md:text-[18.53px] lg:text-[20px] sm:text-[20px] text-[22px] font-[gilroy] md:leading-[30.16px] text-white">
                     Topikdan yuqori ball olish va Koreya universitetiga GRAND yutish uchun yillar shart emas
