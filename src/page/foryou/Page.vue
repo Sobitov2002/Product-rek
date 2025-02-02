@@ -24,7 +24,7 @@ data.value = productData
                 <div
                     class="relative shadow-[3px_22px_27.6px_-3px_rgba(0,0,0,0.5)] bg-[#F7D8D6] md:w-[325px] w-[300px] rounded-[29.4px] h-[309.48px] mx-auto">
                     <img class="absolute bottom-0 h-[343.06px] left-1/2 -translate-x-1/2 bg-center transform"
-                        :src="data.imgUrlTwo" alt="Product">
+                        :src="data.imgUrlTwo" alt="Product" loading="lazy">
                     <!-- Tugmani pastga o'rtaga joylash -->
                     <div
                         class="absolute -bottom-8 left-1/2 text-shadow-custom font-bold -translate-x-1/2 rounded-full w-[69px] h-[69px] bg-white flex items-center justify-center text-[43px]  text-[#A43D3F] shadow-lg leading-none">

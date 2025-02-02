@@ -17,14 +17,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
             O'quvchilarni kurs haqidagi fikri !
         </p>
 
-        <div class="container grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card v-for="video in videoData" 
-                class="overflow-hidden border-none flex flex-col items-center">
+        <div class="container grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Card v-for="video in videoData" class="overflow-hidden border-none flex flex-col items-center">
                 <CardContent class="w-full p-0">
                     <div class="relative w-full aspect-video">
-                        <iframe :src="video.url" class="absolute top-0 left-0 w-full h-full" frameborder="0"
+                        <iframe class="absolute top-0 left-0 w-full h-full" :src="video.url" frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                            title="Video"></iframe>
+                            title="Abubakir2"></iframe>
                     </div>
                 </CardContent>
             </Card>

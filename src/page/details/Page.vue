@@ -22,9 +22,11 @@ import { detailData , detailDataTwo } from './store/index';
                 <!-- Rasm -->
                 <img class="absolute  lg:block hidden left-1/2 transform -translate-x-1/2 
                 max-w-[535.83px] w-full h-auto  object-cover z-[10]"
-                    src="https://ik.imagekit.io/vtroph5l9/Product/3%201.svg?updatedAt=1737146763307" alt="" />
+                    src="https://ik.imagekit.io/vtroph5l9/Product/3%201.svg?updatedAt=1737146763307" alt=""
+                    loading="lazy" />
 
-                <div class="relative grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 h-full gap-5 mt-[00px]">
+                <div
+                    class="relative grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 h-full gap-5 mt-[00px]">
                     <!-- Chap qism -->
                     <ul class="items-center max-w-full ">
                         <div v-for="(item, index) in detailData" :key="index"
