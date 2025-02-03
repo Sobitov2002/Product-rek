@@ -147,9 +147,9 @@ const submit = async () => {
             </div>
 
             <!-- Oferta Tasdiqlash -->
-            <div class="mt-4 flex items-center">
+            <div class="mt-4 flex items-center ">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
-                <label for="offer" class="cursor-pointer mr-2">Men ofertaga roziman</label>
+                <label for="offer" class="cursor-pointer mr-2 md:text-[20px] text-[14px]">Men ofertaga roziman</label>
                 <Oferta />
             </div>
             <div>
