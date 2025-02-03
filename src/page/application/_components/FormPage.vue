@@ -108,7 +108,7 @@ const submit = async () => {
             <div class="relative w-full">
               
                 <input required v-model="formData.phoneNumber" type="number"
-                    class="w-full  pr-4 py-2 border rounded-md" placeholder=" +XXX XX XXX XX XX" />
+                    class="w-full px-3 py-2 border rounded-md" placeholder=" +XXX XX XXX XX XX" />
             </div>
             <p v-if="phoneError" class="text-red-500 text-sm mt-1">{{ phoneError }}</p>
             <label class="block mt-3 mb-2" for="select">O'zingizga mos ta'rifni tanlang!</label>
@@ -146,12 +146,12 @@ const submit = async () => {
                 </button>
             </div>
 
-            <!-- Oferta Tasdiqlash -->
             <div class="mt-4 flex items-center ">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
                 <label for="offer" class="cursor-pointer mr-2 md:text-[20px] text-[14px]">Men ofertaga roziman</label>
                 <Oferta />
             </div>
+
             <div>
                 <a class="flex justify-center mt-3 text-[20px] font-bold" href="https://t.me/TopikDi_Manager"> <svg
                         class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true"
