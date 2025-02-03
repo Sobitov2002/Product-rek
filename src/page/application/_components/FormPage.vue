@@ -20,17 +20,29 @@ const externalValue = ref('');
 const step = ref(1);
 const selectedPayment = ref('');
 const isAgreed = ref(false); // Oferta tasdiqlash
+const phoneError = ref(''); // Error message for phone number validation
 
 const handleSelectChange = (value: string) => {
     externalValue.value = value;
 };
 
 const nextStep = () => {
-    if (!formData.value.firstName || !formData.value.phoneNumber || !externalValue.value) {
+    
+
+      
+    const phoneNumber = formData.value.phoneNumber;
+    if (!formData.value.firstName || !phoneNumber || !externalValue.value) {
         alert("Barcha maydonlarni to'ldiring va ta'rif tanlang!");
         return;
     }
+
+    if (phoneNumber.length < 9) {
+        alert("Raqamni to'liq kiriting (kamida 9 ta raqam)");
+        return;
+    }
+
     step.value = 2;
+    
 };
 
 const selectPayment = (payment: string) => {
@@ -84,6 +96,7 @@ const submit = async () => {
 };
 </script>
 
+
 <template>
     <form @submit.prevent="submit" class="mt-0 mx-auto p-10 bg-white rounded shadow-md w-[100%]">
         <h1 class="text-[#A43D3F] text-[30px] font-[oswald] text-center leading-7">
@@ -100,6 +113,7 @@ const submit = async () => {
                 <input required v-model="formData.phoneNumber" type="number"
                     class="w-full pl-14 pr-4 py-2 border rounded-md" placeholder=" XX XXX XX XX" />
             </div>
+            <p v-if="phoneError" class="text-red-500 text-sm mt-1">{{ phoneError }}</p>
             <label class="block mt-3 mb-2" for="select">O'zingizga mos ta'rifni tanlang!</label>
             <Select @update-select="handleSelectChange" />
 
@@ -126,7 +140,6 @@ const submit = async () => {
                 </div>
             </div>
 
-
             <div v-if="selectedPayment" class="mt-1 p-4 border rounded text-center bg-gray-100">
                 <p class="mb-2">To'lov uchun karta raqami:</p>
                 <p class="font-bold text-lg">5614 6812 5482 2814</p>
@@ -140,11 +153,16 @@ const submit = async () => {
             <div class="mt-4 flex items-center">
                 <input type="checkbox" id="offer" v-model="isAgreed" class="mr-2 w-5 h-5 cursor-pointer">
                 <label for="offer" class="cursor-pointer mr-2">Men ofertaga roziman</label>
-
                 <Oferta />
             </div>
-            <div >
-                <a class="flex" href="https://t.me/TopikDi_Manager"> Telegram<img class="w-7 h-7"
+            <div>
+                <a class="flex justify-center mt-3 text-[20px] font-bold" href="https://t.me/TopikDi_Manager"> <svg
+                        class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 12H5m14 0-4 4m4-4-4-4" />
+                    </svg>
+                    Telegram Admin<img class="w-7 h-7"
                         src="https://ik.imagekit.io/vtroph5l9/Product/telegram.png?updatedAt=1738485901587" alt=""></a>
             </div>
             <div class="mt-4">

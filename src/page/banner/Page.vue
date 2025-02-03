@@ -11,7 +11,7 @@ const footer = ref<HTMLElement | null>(null);
     <div class="prise-img md:min-h-[814px] w-full py-10 z-10 relative">
         <div class="absolute bottom-0  left-0 w-full h-full  -z-10">
             <img class=" md:block sm:h-[600px] h-[692px]  pt-20 sm:p-0 md:h-[692px] bottom-0 lg:h-[790px] w-auto mx-auto absolute left-1/2    transform -translate-x-1/2"
-                src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?updatedAt=1735485996529" alt="Banner Img">
+                src="https://ik.imagekit.io/vtroph5l9/Product/banner.webp?tr=cmpr,w-800" alt="Banner Img">
         </div>
         <div class="">
             <!-- First section -->
@@ -22,7 +22,7 @@ const footer = ref<HTMLElement | null>(null);
                         1,2,3
                         Fevral</h1>
                 </div>
-               
+
             </div>
             <!-- Next section -->
             <div class="lg:mt-[80px] mt-[30px] -z-20">

@@ -23,7 +23,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
                     <div class="relative w-full aspect-video">
                         <iframe class="absolute top-0 left-0 w-full h-full" :src="video.url" frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                            title="Abubakir2"></iframe>
+                            loading="lazy" title="Abubakir2"></iframe>
                     </div>
                 </CardContent>
             </Card>

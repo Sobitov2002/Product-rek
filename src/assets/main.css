@@ -14,10 +14,10 @@
 }
 .custom {
   width: 100%;
-    max-width: 1400px; /* Maksimal kenglik */
-    margin-left: auto; /* O'ng va chap tomondan markazlash */
+    max-width: 1400px;
+    margin-left: auto; 
     margin-right: auto;
-    padding-left: 15px; /* Ichki bo'shliq */
+    padding-left: 15px; 
     padding-right: 15px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .prise-img {
-  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Group%201%204.png?updatedAt=1737192663032);
+  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Group%201%204.png?tr=cmpr,q-80,w-800);
   background-color: #ED9EA1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@
 }
 
 .prise {
-  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Group%201%205.png?updatedAt=1737192729248);
+  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Group%201%205.png?tr=cmpr,q-80,w-800);
   background-color: #ED9EA1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 }
 
 .foryou-img {
-  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Layer%206%201.png?updatedAt=1737192618585);
+  background-image: url(https://ik.imagekit.io/vtroph5l9/Product/Layer%206%201.png?tr=cmpr,q-80,w-800);
   background-size: cover;
   background-repeat: no-repeat;
 }

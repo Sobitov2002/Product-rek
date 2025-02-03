@@ -13,7 +13,7 @@ export   const priceData = [
         { id: '5', title: "Darslarni mustaqil ravishda o’rganasiz." },
       ],
       price:  "1.320.000",
-      icon: { class: '../src/assets/icon/Vector.svg', size: 'text-3xl', color: 'text-white' }
+     
     },
     {
       imageurl:'https://ik.imagekit.io/vtroph5l9/Product/Medal%20First%20Place.svg?updatedAt=1738475830606',
@@ -34,10 +34,10 @@ export   const priceData = [
 
       ],
       price: "2.280.000 ",
-      icon: { class: '../src/assets/icon/Medal First Place.svg',size: 'text-3xl', color: 'text-white'  }
+      
     },
     {
-      imageurl:'https://ik.imagekit.io/vtroph5l9/Product/Guarantee.svg?updatedAt=1738475830505',
+      imageurl:'https://ik.imagekit.io/vtroph5l9/Product/Vector.svg?tr=cmpr,q-80,w-800',
       text: 'VIP',
       subtitle: [
         { id: '1', title: "Platforma" },
@@ -54,6 +54,5 @@ export   const priceData = [
         { id: '12', title: "Kurs davomida shaxsan Dina Korean tomonidan darslarni o’zlashtirishda yordam" },
       ],
       price: "5.100.000 ",
-      icon: { class: '../src/assets/icon/Guarantee.svg',size: 'h-[52px]', color: 'text-white'  }
     }
   ];

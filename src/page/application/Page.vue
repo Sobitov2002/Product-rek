@@ -23,7 +23,7 @@ Data.value = priceData;
                     <div class="relative">
                         <div
                             class="absolute bg-[#EEB4B3] top-[-50px] left-[50%] shadow-[0px_4px_4px_1px_rgba(0,0,0,0.2)] transform -translate-x-1/2 h-[85px] w-[85px] rounded-full flex items-center justify-center">
-                            <img :src="data.imageurl" :class="[ data.icon.size, data.icon.color]" alt="icon"
+                            <img :src="data.imageurl"  alt="icon"
                                 loading="lazy"  />
                         </div>
                     </div>
