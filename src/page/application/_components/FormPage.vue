@@ -36,10 +36,7 @@ const nextStep = () => {
         return;
     }
 
-    if (phoneNumber.length < 9) {
-        alert("Raqamni to'liq kiriting (kamida 9 ta raqam)");
-        return;
-    }
+    
 
     step.value = 2;
     
@@ -64,7 +61,7 @@ const submit = async () => {
     isLoading.value = true;
 
     const text = `*Ism Familya:* ${formData.value.firstName}
-*Telefon:* +998${formData.value.phoneNumber}
+*Telefon:* ${formData.value.phoneNumber}
 *Ta'rif:* ${externalValue.value}
 *Vaqt:* ${new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric' }).format(new Date())}`;
 
@@ -109,9 +106,9 @@ const submit = async () => {
                 placeholder="Ism Familya" />
             <label class="block mb-2 mt-3" for="phoneNumber">Telefon raqamingiz</label>
             <div class="relative w-full">
-                <span class="absolute left-3  top-1/2 transform -translate-y-1/2 text-gray-500">+998</span>
+              
                 <input required v-model="formData.phoneNumber" type="number"
-                    class="w-full pl-14 pr-4 py-2 border rounded-md" placeholder=" XX XXX XX XX" />
+                    class="w-full  pr-4 py-2 border rounded-md" placeholder=" +XXX XX XXX XX XX" />
             </div>
             <p v-if="phoneError" class="text-red-500 text-sm mt-1">{{ phoneError }}</p>
             <label class="block mt-3 mb-2" for="select">O'zingizga mos ta'rifni tanlang!</label>
