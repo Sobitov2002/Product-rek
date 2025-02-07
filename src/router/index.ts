@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/MainLayout.vue'
+import Price from '@/page/application/Page.vue'
 
 
 const router = createRouter({
@@ -8,10 +9,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component:Home ,
+      component: Home,
+    },
+    {
+      path: '/price',
+      name: 'price',
+      component: Price,  
     }
-   
   ],
-})
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+      };
+    }
+  },
+});
 
-export default router
+export default router;

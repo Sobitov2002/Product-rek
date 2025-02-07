@@ -15,7 +15,7 @@ Data.value = priceData;
 
 </script>
 <template>
-    <div class="prise-img ">
+    <div class="prise-img " id="price-section">
         <div ref="footer" class="custom  py-20  ">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-20 sm:grid-cols-2 grid-cols-1 relative mt-5">
                 <Card class="shadow-2xl  bg-white backdrop-blur-md rounded-[12.89px] p-2   relative"
@@ -23,8 +23,7 @@ Data.value = priceData;
                     <div class="relative">
                         <div
                             class="absolute bg-[#EEB4B3] top-[-50px] left-[50%] shadow-[0px_4px_4px_1px_rgba(0,0,0,0.2)] transform -translate-x-1/2 h-[85px] w-[85px] rounded-full flex items-center justify-center">
-                            <img :src="data.imageurl"  alt="icon"
-                                loading="lazy"  />
+                            <img :src="data.imageurl" alt="icon" loading="lazy" />
                         </div>
                     </div>
                     <CardHeader class="mt-4  font-[oswald] flex items-center">

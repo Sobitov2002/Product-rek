@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-// import Price from '@/components/price/Price.vue'
-import Dialog from '@/page/application/_components/Dialog.vue'
-const footer = ref<HTMLElement | null>(null);
-
-
+const scrollToBottom = () => {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+    });
+};
 </script>
+
 
 <template>
     <div class="prise-img md:min-h-[814px] w-full py-10 z-10 relative">
@@ -19,8 +20,7 @@ const footer = ref<HTMLElement | null>(null);
                 <div class="bg-white w-[246px]  p-1 md:py-2 rounded-[21.94px]">
                     <h1
                         class="text-[#CB7C7E] text-center font-[oswald] text-[27px] md:text-[40px] font-bold lg:text-[48.12px]   lg:leading-[71.32px]">
-                        1,2,3
-                        Fevral</h1>
+                        Topik.Di</h1>
                 </div>
 
             </div>
@@ -79,7 +79,7 @@ const footer = ref<HTMLElement | null>(null);
 
             <div
                 class="sm:w-auto z-20 md:order-2 absolute md:relative bottom-2 order-3 w-full flex justify-center items-center">
-                <p
+                <p @click="scrollToBottom"
                     class="text-[#272727] z-20 rounded-[20.14px] px-16 py-2 bg-white md:text-[18.53px] lg:text-[25px] sm:text-[20px] text-[22px] cursor-pointer font-[gilroy] flex items-center gap-2">
                     Batafsil
                     <svg class="w-6 h-6 animate-bounce" viewBox="0 0 24 24" fill="none"
